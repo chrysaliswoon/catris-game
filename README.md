@@ -25,8 +25,6 @@ A lot of things which programmers create are usually based on things which curre
 
 ## High Concept
 
-## Pitch & Concept
-
 ## Wireframing & Prototype
 
 ## Game Architecture
