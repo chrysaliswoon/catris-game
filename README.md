@@ -23,6 +23,8 @@ A lot of things which programmers create are usually based on things which curre
 - JavaScript
 - Git & GitHub
 
+## Deployment
+
 ## High Concept
 
 ## Wireframing & Prototype
