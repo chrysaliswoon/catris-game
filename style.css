@@ -1,0 +1,25 @@
+/* This is where we style and create the visual aspects of the game
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
+
+body {
+    font-family: 'Chicle', cursive;
+    text-align: center;
+    background-image: url("Image Assets/CityBackground.png");
+    background-position: center; /*Background image is centered at all times*/
+    background-repeat: no-repeat; /*Background image doesn't repeat and stretches to fit*/
+    background-attachment:fixed;
+    background-size:cover;
+    -moz-background-size:cover; /*For Firefox compatibility */
+    -webkit-background-size:cover; /*For Safari and Chrome compatibility */
+    
+}
+
+h1 {
+    font-size: 70px;
+    letter-spacing: 8px;
+    color: white;
+	-webkit-text-stroke: 1px #9e402b;
+	text-shadow: 0px 4px 4px #9e402b;
+}
