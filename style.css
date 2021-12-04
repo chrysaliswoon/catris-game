@@ -3,7 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
 
-body {
+* {
     font-family: 'Chicle', cursive;
     text-align: center;
     background-image: url("Image Assets/CityBackground.png");
@@ -23,3 +23,4 @@ h1 {
 	-webkit-text-stroke: 1px #9e402b;
 	text-shadow: 0px 4px 4px #9e402b;
 }
+

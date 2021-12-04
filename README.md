@@ -43,6 +43,16 @@ Before creating the code for the game, I created a wireframe and prototype using
 ## Game Architecture
 
 
+## Approach to Development
+Using the plan and pseudocodes, I broke down the project into stages:
+- Step 1: Generate the Tetris Board [Timeline: 1 week]
+- Step 2: Generate the Tetrominoes [Timeline: 2 weeks]
+- Step 3: Create the Game Logic [Timeline: 2 weeks]
+- Step 4 (Stretch Goal): Create different levels and point system [Timeline: 2 weeks]
+- Step 5 (Stretch Goal): Retrieve scores [Timeline: 1 week]
+
+When I was coding out the project, I made it a habit to comment on my codes frequently as I was still learning and I tend to forget certain concepts or code blocks which I have done or used before. This also meant that I also committed to GitHub frequently to log all of the changes to the project so I can retrieve an older version if necessary.
+
 ## Key Learnings
 
 
