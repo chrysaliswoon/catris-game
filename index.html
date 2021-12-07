@@ -3,32 +3,53 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8"> <!--This is the standard character encoding used in web pages. Letter are interpreted based on standard rules like UTF-8 which assigns each character to a specific group of 8-digit binary strings-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This renders the width of the page to the device's screen size-->
-        <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!--This specifies the document mode for IE. IE=edge is the highest supported mode-->
-        <meta http-equiv="X-UA-Compatible" content="chrome=1"> <!--This specified document mode for Google-->
+        <!--This is the standard character encoding used in web pages. Letter are interpreted based on standard rules like UTF-8 which assigns each character to a specific group of 8-digit binary strings-->
+        <meta charset="UTF-8"> 
+        <!--This renders the width of the page to the device's screen size-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!--This specifies the document mode for IE. IE=edge is the highest supported mode-->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <!--This specified document mode for Google-->
+        <meta http-equiv="X-UA-Compatible" content="chrome=1"> 
 
-        <link rel="stylesheet" href="style.css"> <!--This links the style sheet-->
+        <!--This links the style sheet-->
+        <link rel="stylesheet" href="style.css"> 
 
-        <title>GA SEI Project 1: Tetris</title> <!--This is the title of the document for SEO purposes-->
+        <!--This is the title of the document for SEO purposes-->
+        <title>GA SEI Project 1: Tetris</title> 
     </head>
 
 <body>
+    <!--Title of Game-->
     <h1>CATRIS</h1>
+
+    <!--Grid of the Board-->
     <div class="grid">
-        <canvas id="board" class="game-board"></canvas>
-            <div class="right-column">
-                <div>
-                    <p>Score: <span id="score">0</span></p>
-                    <p>Lines: <span id="lines">0</span></p>
-                    <p>Level: <span id="level">0</span></p>
-                    <canvas id="next" class="next"></canvas>
-                </div>
-                <button onclick="play()" class="play-button">Play</button>
-            </div>
+        <!--The <canvas> tag is used to draw graphics, on the fly, via scripting (usually JavaScript).-->
+        <!--The <canvas> tag is transparent, and is only a container for graphics, you must use a script to actually draw the graphics.-->
+        <canvas id="board" class="game-board"></canvas> 
+    
+    <!--Player Scores-->
+    <div class="right-column">
+        <!--The <span> tag is an inline container used to mark up a part of a text, or a part of a document.-->
+        <!--The <span> tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.-->
+        <p>Score: <span id="score">0</span></p>
+        <p>Lines: <span id="lines">0</span></p>
+        <p>Level: <span id="level">0</span></p>
+    
+    <!--Upcoming Tetromino Block-->
+    <div class="left-column">
+        <canvas id="next" class="next"></canvas> 
+    </div>    
+        <!--Creates a clickable button-->
+        <button onClick="play()" class="play-button">Play</button>
+    </div>
     </div>
 
     <!--Scripts-->
-    <script type="text/javascript" src=""
+    <script src="JS Folders/constants.js"></script>
+    <script src="JS Folders/block.js"></script>
+    <script src="JS Folders/board.js"></script>
+    <script src="JS Folders/main.js"></script>
 </body>
 </html>

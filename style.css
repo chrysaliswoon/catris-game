@@ -1,8 +1,11 @@
 /* This is where we style and create the visual aspects of the game
 */
 
+/* Imported font */
 @import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
 
+
+/* Styling for the whole program */
 * {
     font-family: 'Chicle', cursive;
     text-align: center;
@@ -16,6 +19,7 @@
     
 }
 
+/* Styling for the game title */
 h1 {
     font-size: 70px;
     letter-spacing: 8px;
@@ -24,7 +28,22 @@ h1 {
 	text-shadow: 0px 4px 4px #9e402b;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 500px 100px;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+}
 
 .game-board {
-    border: solid 2px;
+    border: solid 8px;
+}
+
+.play-button {
+    font-size: 20px;
+    padding: 15px 30px;
+    cursor: pointer;
 }
