@@ -34,7 +34,10 @@ The game is deployed on GitHub pages, and you can play the game here: https://ch
 ## High Concept
 Different bricks called Tetriminos which are randomly generated will fall down. Players will use the arrow keys to rotate, move, and drop the Tetriminos. Players will attempt to clear as many lines as possible by completing horizontal rows of blocks without any empty spaces, but if the Tetriminos surpass the Skyline the game is over!
 
-![Planning]Project Planning/Project 1 Tetris Plan-Components of Tetris.jpg)
+I looked at various versions of Tetris to see how I can structure the visuals and structure of it:
+
+Idea Board/tetris-5-things-fan_feature.jpeg
+Idea Board/tetris-n3twork.jpeg
 
 ## Wireframing & Prototype
 Before creating the code for the game, I created a wireframe and prototype using Figma. This allowed me to identify the various visual components of the game which will affect my HTML and CSS codes, and which parts I would need to make interactive, which affects the JS portion of my codes.
