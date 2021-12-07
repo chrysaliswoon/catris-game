@@ -24,3 +24,7 @@ h1 {
 	text-shadow: 0px 4px 4px #9e402b;
 }
 
+
+.game-board {
+    border: solid 2px;
+}

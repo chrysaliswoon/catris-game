@@ -29,7 +29,7 @@ A lot of things which programmers create are usually based on things which curre
 - Git & GitHub
 
 ## Deployment
-The game is deployed on GitHub pages, and you can play the game here: 
+The game is deployed on GitHub pages, and you can play the game here: https://chrysaliswoon.github.io/CatrisProject/
 
 ## High Concept
 Different bricks called Tetriminos which are randomly generated will fall down. Players will use the arrow keys to rotate, move, and drop the Tetriminos. Players will attempt to clear as many lines as possible by completing horizontal rows of blocks without any empty spaces, but if the Tetriminos surpass the Skyline the game is over!
