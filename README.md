@@ -39,9 +39,10 @@ I looked at various versions of Tetris to see how I can structure the visuals an
 ## Wireframing & Prototype
 Before creating the code for the game, I created a wireframe and prototype using Figma. This allowed me to identify the various visual components of the game which will affect my HTML and CSS codes, and which parts I would need to make interactive, which affects the JS portion of my codes.
 
-
 ## Game Architecture
+In order to understand the various components which I will need to create, I first played a standard Tetris game and observed how the Tetrominoes moved, the size of the Tetris Board, and what are the different types of variables involved.
 
+Afterwards, I deconstructed it and drew out the various components:
 
 
 
@@ -57,14 +58,17 @@ When I was coding out the project, I made it a habit to comment on my codes freq
 
 I also created notes and made a series of Medium articles which will give you insight into how I created the game:
 
-Part 1 (Planning): https://medium.com/@chrysaliswoon/combining-html-css-js-tetris-project-part-i-planning-cbe524c97a63
+**Part 1 (Planning):** https://medium.com/@chrysaliswoon/combining-html-css-js-tetris-project-part-i-planning-cbe524c97a63
 
 
 
 ## Key Learnings
-
+1. 
+2. 
+3. 
 
 ## Future Developments / Improvements
+
 
 
 ## References
