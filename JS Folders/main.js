@@ -15,10 +15,9 @@ ctx.scale(BLOCK_SIZE, BLOCK_SIZE); // Scales the blocks 30 by 30
 
 // Call the function in board.js
 
-let board = new Board ();
+let board = new Board();
 
-// Runs the code when the play button is clicked
-function play () {  
-    board.reset();
-    console.table(board.grid);
+function play() {  
+  board.reset();  
+  console.table(board.grid);  
 }
