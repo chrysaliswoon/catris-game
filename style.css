@@ -10,7 +10,7 @@
     font-family: 'Chicle', cursive;
     text-align: center;
     background-image: url("Image Assets/CityBackground.png");
-    background-position: center; /*Background image is centered at all times*/
+    background-position: center; /*Background image is centered at all times */
     background-repeat: no-repeat; /*Background image doesn't repeat and stretches to fit*/
     background-attachment:fixed;
     background-size:cover;
@@ -43,6 +43,7 @@ h1 {
 }
 
 .play-button {
+    color: black;
     font-size: 20px;
     padding: 15px 30px;
     cursor: pointer;

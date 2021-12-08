@@ -60,6 +60,27 @@ I also created notes and made a series of Medium articles which will give you in
 
 **Part 1 (Planning):** https://medium.com/@chrysaliswoon/combining-html-css-js-tetris-project-part-i-planning-cbe524c97a63
 
+**Part 2 (Creating the Visuals):**
+
+**Part 3 (Creating the Tetrominoes):**
+
+**Part 4 (Keyboard Input):**
+
+**Part 5 (Collision Detection):**
+
+**Part 6 (Tetromino Rotation):**
+
+**Part 7 (Randomization of Tetrominoes):**
+
+**Part 8 (Game Loop & Timer):**
+
+**Part 9 (Line Clear):**
+
+**Part 10 (Creating Levels & Game Over Feature):**
+
+**Part 11 (Next Tetromino):**
+
+**Part 12 (Creating High Scores):**
 
 
 ## Key Learnings
@@ -68,7 +89,10 @@ I also created notes and made a series of Medium articles which will give you in
 3. 
 
 ## Future Developments / Improvements
+As this is created for a project submission, there might be no future iterations of this. However, if there were, these would be the future developments/improvements I would create:
 
+- Update the game visuals
+- 
 
 
 ## References
