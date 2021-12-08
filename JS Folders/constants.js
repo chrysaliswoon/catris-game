@@ -7,5 +7,5 @@ const COL = 10; // Width of the board is 10 pixels
 const ROW = 20; // Height of the board is 20 pixels
 
 // Tetris Piece
-const BLOCK_SIZE = 30; // size of the tetromino is 30 pixels
+const BLOCK_SIZE = 30; // size of the tetromino is 20 pixels
 
