@@ -6,6 +6,6 @@
 const COL = 10; // Width of the board is 10 columns
 const ROW = 20; // Height of the board is 20 rows
 
-// Tetris Piece
+// Size of the Blocks
 const BLOCK_SIZE = 30; // 
 

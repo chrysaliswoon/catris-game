@@ -1,16 +1,19 @@
-// This will generate the board for the game
+// This will generate the Board for the game
+// The board and pieces are good candidates for a class. We can create a new Board when starting a new game and a new Piece every time a new piece enters the game.
+
+// When we create a new instance of board, we connect it with the canvas context. 
 
 class Board {
-  
-  // Reset the board when we start a new game.
-  reset() {
-    this.grid = this.getEmptyBoard();
-  }
-  
-  // Get matrix filled with zeros.
-  getEmptyBoard() {
-    return Array.from(
-      {length: ROWS}, () => Array(COLS).fill(0)
-    );
-  }
+    constructor(ctx) {
+        this.ctx = ctx; // The this keyword allows us to set and access the properties inside a class.
+        this.grid = this.getEmptyBoard();
+    }
+
+    getEmptyBoard() {
+        return Array.from(
+            {length: ROW}, () => Array(COL).fill(0)
+        );
+    }
 }
+
+

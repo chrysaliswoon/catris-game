@@ -1,23 +1,32 @@
 // This will initialise the game and execute the overall game logic for Tetris
 
-const canvas = document.getElementById('board'); // Grabs the HTML elements based on the ID attribute, "board"
-const ctx = canvas.getContext('2d'); // Provides 2D rendering context fo the drawing suface of a <canvas> element
+// Drawing the Canvas // 
 
-// Calculates the size of the canvas from our constant
+// The document object provides a programmable interface for the HTML document. 
+// The document has a tree-like structure and is often referred to as the DOM (Document Object Model).
 
-ctx.canvas.width = COL * BLOCK_SIZE; // 10*30 = 300
-ctx.canvas.height = ROW * BLOCK_SIZE; // 20*30 = 600
+const canvas = document.getElementById('board'); // We can call the getElementById method to access elements from the DOM.
 
-// Scale the Tetromino blocks
+// The HTMLCanvasElement.getContext() method returns a drawing context on the canvas, or null if the context identifier is not supported, or the canvas has already been set to a different context mode.
 
-ctx.scale(BLOCK_SIZE, BLOCK_SIZE); // Scales the blocks 30 by 30
+const ctx = canvas.getContext('2d');
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Call the function in board.js
+// Calculate the size of the Tetris Board (Canvas) from our constants.js // 
 
-let board = new Board();
+ctx.canvas.width = COL * BLOCK_SIZE;
+ctx.canvas.height = ROW * BLOCK_SIZE;
 
-function play() {  
-  board.reset();  
-  console.table(board.grid);  
+// Scales our Tetromino Blocks //
+
+ctx.scale(BLOCK_SIZE, BLOCK_SIZE);
+
+// Initialize the array table in the console table when we press the "Play" button.
+
+let board = new Board(ctx);
+
+function play(){
+    board = new Board(ctx);
+    console.table(board.grid);
 }

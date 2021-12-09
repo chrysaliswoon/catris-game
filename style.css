@@ -9,18 +9,19 @@
 * {
     font-family: 'Chicle', cursive;
     text-align: center;
-    background-image: url("Image Assets/CityBackground.png");
+    /* background-image: url("Image Assets/CityBackground.png");
     background-position: center; /*Background image is centered at all times */
-    background-repeat: no-repeat; /*Background image doesn't repeat and stretches to fit*/
-    background-attachment:fixed;
+    /* background-repeat: no-repeat; /*Background image doesn't repeat and stretches to fit*/
+    /* background-attachment:fixed;
     background-size:cover;
     -moz-background-size:cover; /*For Firefox compatibility */
-    -webkit-background-size:cover; /*For Safari and Chrome compatibility */
+    /* -webkit-background-size:cover; For Safari and Chrome compatibility */ 
     
 }
 
 /* Styling for the game title */
 h1 {
+    background-color: hotpink;
     font-size: 70px;
     letter-spacing: 8px;
     color: white;
@@ -28,12 +29,16 @@ h1 {
 	text-shadow: 0px 4px 4px #9e402b;
 }
 
+/* Creates the grid to generate the board and tetris blocks*/
 .grid {
-    display: grid;
-    grid-template-columns: 500px 100px;
+    background-color: grey;
 }
 
 .right-column {
+    background-color: yellow;
+    display: grid; /* Generates a block-level grid */
+    /* Defines the columns of the grid with a space-separated list of values which represent the track size, and the space between them represents the grid line */
+    grid-template-columns: 500px 100px; 
     display: flex;
     flex-direction: column;
 }
