@@ -11,6 +11,8 @@ const canvas = document.getElementById('board'); // We can call the getElementBy
 
 const ctx = canvas.getContext('2d');
 
+let board = null;
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Calculate the size of the Tetris Board (Canvas) from our constants.js // 
@@ -24,9 +26,17 @@ ctx.scale(BLOCK_SIZE, BLOCK_SIZE);
 
 // Initialize the array table in the console table when we press the "Play" button.
 
-let board = new Board(ctx);
+// let board = new Board(ctx);
 
 function play(){
     board = new Board(ctx);
-    console.table(board.grid);
+    // console.table(board.grid);
+    draw();
+}
+
+function draw() {
+    const { width, height } = ctx.canvas;
+    ctx.clearRect(0, 0, width, height);
+
+    board.piece.draw();
 }
