@@ -1,9 +1,6 @@
 /* This is where we style and create the visual aspects of the game
 */
 
-/* Imported font */
-@import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
-
 
 /* Styling for the whole program */
 /* * {
@@ -54,7 +51,7 @@
 } */ 
 
 * {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Krona One', sans-serif;
   }
   
   .grid {
@@ -69,6 +66,9 @@
   }
   
   .game-board {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     border: solid 2px;
   }
   

@@ -9,3 +9,12 @@ const ROW = 20; // Height of the board is 20 rows
 // Size of the Blocks
 const BLOCK_SIZE = 30; // 
 
+// Controls the arrow keys 
+
+const KEY = {
+    LEFT: 37,
+    UP: 38,
+    RIGHT: 39,
+    DOWN: 40
+}
+Object.freeze(KEY);
