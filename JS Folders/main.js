@@ -24,19 +24,14 @@ ctx.canvas.height = ROW * BLOCK_SIZE;
 
 ctx.scale(BLOCK_SIZE, BLOCK_SIZE);
 
-// Initialize the array table in the console table when we press the "Play" button.
-
-// let board = new Board(ctx);
-
-function play(){
+function play() {
     board = new Board(ctx);
-    // console.table(board.grid);
     draw();
 }
 
 function draw() {
-    const { width, height } = ctx.canvas;
+    const { width, height } = ctx.canvas; 
     ctx.clearRect(0, 0, width, height);
-
-    board.piece.draw();
+ 
+    board.block.draw();
 }
