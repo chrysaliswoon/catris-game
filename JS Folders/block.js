@@ -16,7 +16,7 @@ class Block {
   }
 
   draw() {
-    this.ctx.fillStlye = this.color'
+    this.ctx.fillStyle = this.color;
     this.shape.forEach((row, y) => {
       row.forEach((value, x) => {
         if (value > 0) {
