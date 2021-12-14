@@ -7,7 +7,7 @@ class Board {
     constructor(ctx) {
       this.ctx = ctx;
       this.grid = this.getEmptyBoard();
-      this.board = new Block(ctx);
+      this.block = new Block(ctx);
     }
 
     // In Tetris, the board consists of cells, which are either occupied or empty.
