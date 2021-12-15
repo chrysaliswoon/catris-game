@@ -84,8 +84,10 @@ I also created notes and made a series of Medium articles which will give you in
 
 
 ## Key Learnings
-1. 
-2. 
+1. In order to rotate the Tetromino pieces, I learned that instead of creating different variations of the matrices and looping through them, an easier way would be to use the rotation matrix, which required knowledge of linear algebra. 
+
+2. Through the project, I learned concepts and terms like JSON, Classes, Immutability, Destructuring and Proxy. 
+
 3. 
 
 ## Future Developments / Improvements
@@ -93,6 +95,15 @@ As this is created for a project submission, there might be no future iterations
 
 - Update the game visuals
 - 
+
+## Summary
+As this was my first time creating a project in a very tight timeframe, it was considered extremely ambitious for me to recreate the Tetris game. 
+
+However, the idea behind it was that by learning how others recreated the game, I would understand the logic flow behind it and how they linked the HTML, CSS and JS together. This would then allow me to complete create a game from scratch by myself. 
+
+I also learn best by recreating someone's else work, deconstructing it, and then find a better way of going about it. 
+
+My philosophy is, "Don't reinvent the wheel. Analyse and observe how the wheel works, the thought process behind creating it, the mechanics of it, and then deconstruct it, and make it better through reconstructing."
 
 
 ## References

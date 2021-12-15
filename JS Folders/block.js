@@ -26,9 +26,11 @@ class Block {
       })
     })
   }
+
   // Takes a tetromino piece "p" as input and updates the x or y variable of the current piece to change its position on the board
   move(p) {
     this.x = p.x;
     this.y = p.y;
+    this.shape = p.shape;
   }
 }
