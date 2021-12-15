@@ -9,12 +9,12 @@ const ROW = 20; // Height of the board is 20 rows
 // Size of the Blocks
 const BLOCK_SIZE = 30; // 
 
-// Controls the arrow keys 
-
+// Arrow Keys - Numbers are taken from the keycodes for left, right, up and down: https://keycode.info/
 const KEY = {
     LEFT: 37,
     UP: 38,
     RIGHT: 39,
     DOWN: 40
 }
-Object.freeze(KEY);
+Object.freeze(KEY); // This freezes the values for the arrow keys so they can't be changed
+
