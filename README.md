@@ -88,7 +88,7 @@ I also created notes and made a series of Medium articles which will give you in
 
 2. Through the project, I learned concepts and terms like JSON, Classes, Immutability, Destructuring and Proxy. 
 
-3. 
+3. With a project as complex as Tetris, it helps to separate the JS files for each main component so you can identify the errors and bugs. But at the same time, this meant that sometimes you might not know where a particular code is referencing it from.
 
 ## Future Developments / Improvements
 As this is created for a project submission, there might be no future iterations of this. However, if there were, these would be the future developments/improvements I would create:
