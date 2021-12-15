@@ -32,9 +32,10 @@ function handleKeyPress(event) {
     if (moves[event.keyCode]) {
         let p = moves[event.keyCode](board.block);
 
-        board.block.move(p);
-
-        draw();
+        if (board.valid(p)) { // Connects to the board.js to detect the wall for collision
+            board.block.move(p);
+            draw();
+        }
     }
 }
 

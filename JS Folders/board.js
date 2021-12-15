@@ -35,4 +35,22 @@ class Board {
 
       return p;
     }
+
+    // Collision Detection
+    valid(p){
+      return p.shape.every((row, y) => {
+        return row.every((value, x) => 
+          value === 0 ||
+          this.isInsideWalls(p.x + x, p.y + y)
+        )
+      })
+    }
+
+    isInsideWalls(x, y) {
+      return (
+        x >= 0 && // Detects the left wall
+        x < COL && // Detects the right wall
+        y < ROW // Detects the bottom wall
+      )
+    }
 }

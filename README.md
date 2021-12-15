@@ -90,6 +90,8 @@ I also created notes and made a series of Medium articles which will give you in
 
 3. With a project as complex as Tetris, it helps to separate the JS files for each main component so you can identify the errors and bugs. But at the same time, this meant that sometimes you might not know where a particular code is referencing it from.
 
+4. We learned in class to use setInterval or setTimeout. However, for the Tetris game, I created a function called requestAnimationFrame() which paints a frame and reschedules itself. This is so we only see the Tetris block moving down when it is visible and it enables browser optimizations. This taught me that we might learn a concept, but depending on the usage, that concept might not be suitable for what we want.
+
 ## Future Developments / Improvements
 As this is created for a project submission, there might be no future iterations of this. However, if there were, these would be the future developments/improvements I would create:
 
