@@ -15,6 +15,12 @@ const BLOCK_SIZE = 30; //
 const canvas = document.getElementById('board'); // We can call the getElementById method to access elements from the DOM.
 const ctx = canvas.getContext('2d'); // The HTMLCanvasElement.getContext() method returns a drawing context on the canvas, or null if the context identifier is not supported, or the canvas has already been set to a different context mode.
 
+// Calculate the size of the Tetris Board (Canvas) from our constants.js // 
+ctx.canvas.width = COL * BLOCK_SIZE;
+ctx.canvas.height = ROW * BLOCK_SIZE;
+
+// Scales our Tetromino Blocks //
+ctx.scale(BLOCK_SIZE, BLOCK_SIZE);
 
 // Arrow Keys - Numbers are taken from the keycodes for left, right, up and down: https://keycode.info/
 const KEY = {

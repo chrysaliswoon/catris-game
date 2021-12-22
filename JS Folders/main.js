@@ -1,19 +1,5 @@
 // This will initialise the game and execute the overall game logic for Tetris
 
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// Calculate the size of the Tetris Board (Canvas) from our constants.js // 
-
-ctx.canvas.width = COL * BLOCK_SIZE;
-ctx.canvas.height = ROW * BLOCK_SIZE;
-
-// Scales our Tetromino Blocks //
-
-ctx.scale(BLOCK_SIZE, BLOCK_SIZE);
-
-
-
 let board = new Board();
 
 function handleKeyPress(event) {
