@@ -3,9 +3,9 @@
 let board = new Board();
 
 function handleKeyPress(event) {
-    event.preventDefault();
+    event.preventDefault(); // Stop the event from bubbling
 
-    if (moves[event.keyCode]) {
+    if (moves[event.keyCode]) { // Get new state of piece
         let p = moves[event.keyCode](board.block);
 
         if (board.valid(p)) { // Connects to the board.js to detect the wall for collision
