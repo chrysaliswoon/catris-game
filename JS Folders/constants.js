@@ -31,3 +31,10 @@ const KEY = {
 }
 Object.freeze(KEY); // This freezes the values for the arrow keys so they can't be changed
 
+// Allows the Tetromino piece to move left, right and down using a spread operator
+const moves = {
+    [KEY.LEFT]: (p) => ({ ...p, x: p.x - 1}), 
+    [KEY.RIGHT]: (p) => ({ ...p, x: p.x + 1}),
+    [KEY.DOWN]: (p) => ({ ...p, y: p.y + 1}),
+    [KEY.UP]: (p) => board.rotate(p),
+}
