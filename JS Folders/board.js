@@ -3,6 +3,8 @@
 
 // When we create a new instance of board, we connect it with the canvas context. 
 
+let requestId = null;
+
 class Board {  
     constructor(ctx) {
       this.ctx = ctx;
