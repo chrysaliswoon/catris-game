@@ -3,11 +3,15 @@
 class Block {
   constructor(ctx){
     this.ctx = ctx;
+    // this.color = 'blue';
+    // this.shape = [
+    //   [1, 0, 0], [1, 1, 1], [0, 0, 0],
+    // ]
 
-    this.color = 'blue';
-    this.shape = [
-      [1, 0, 0], [1, 1, 1], [0, 0, 0],
-    ]
+    // Randomizes the Tetromino shape and color
+    const typeID = this.randomizeTetromino(COLORS.length)
+    this.shape = SHAPES[typeID]
+    this.color = COLORS[typeID]
 
     // Starting position of the Tetromino
     this.x = 3;
@@ -31,4 +35,11 @@ class Block {
     this.y = p.y;
     this.shape = p.shape;
   }
+
+  // Randomly selects one of the Tetrominoes using Math (built in JS). 
+  randomizeTetromino(noOfTypes) {
+    return Math.floor(Math.random() * noOfTypes)
+  }
 }
+
+
