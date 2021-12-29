@@ -1,59 +1,26 @@
 /* This is where we style and create the visual aspects of the game
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Galindo&family=Krona+One&display=swap');
 
-/* Styling for the whole program */
-/* * {
-    font-family: 'Chicle', cursive;
-    text-align: center;
-    /* background-image: url("Image Assets/CityBackground.png");
+/* Styling for the body */
+body {
+    font-family: 'Galindo', cursive;  
+    background-image: url("Image Assets/CityBackground.png");
     background-position: center; /*Background image is centered at all times */
-    /* background-repeat: no-repeat; /*Background image doesn't repeat and stretches to fit*/
-    /* background-attachment:fixed;
+    background-repeat: no-repeat; /*Background image doesn't repeat and stretches to fit*/
+    background-attachment:fixed;
     background-size:cover;
     -moz-background-size:cover; /*For Firefox compatibility */
-    /* -webkit-background-size:cover; For Safari and Chrome compatibility */ 
-    
-/* } */
-
-/* Styling for the game title */
-/* h1 {
-    background-color: hotpink;
-    font-size: 70px;
-    letter-spacing: 8px;
-    color: white;
-	-webkit-text-stroke: 1px #9e402b;
-	text-shadow: 0px 4px 4px #9e402b;
-} */
-
-/* Creates the grid to generate the board and tetris blocks*/
-/* .grid {
-    display: grid; /* Generates a block-level grid */
-    /* Defines the columns of the grid with a space-separated list of values which represent the track size, and the space between them represents the grid line */
-    /* grid-template-columns: 500px 100px;  */
-/* } */ 
-
-/* .right-column {
-    background-color: yellow;
-    display: flex;
-    flex-direction: column;
-} */
-
-/* .game-board {
-    border: solid 8px;
-} */
-
-/* .play-button {
-    color: black;
-    font-size: 20px;
-    padding: 15px 30px;
-    cursor: pointer;
-} */ 
-
-* {
-    font-family: 'Krona One', sans-serif;
+    -webkit-background-size:cover; /*For Safari and Chrome compatibility */ 
   }
   
+  /* Styling for the game title */
+  .title {
+    letter-spacing: 2px;
+    font-size: 40px; 
+  }
+
   .grid {
     display: grid;
     grid-template-columns: 350px 200px;
@@ -64,36 +31,43 @@
     flex-direction: column;
     justify-content: space-between;
   }
+
+  #board {
+    background-color: whitesmoke;
+    opacity: 90%;
+  }
   
   .game-board {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: solid 2px;
+    border: solid 3px;
   }
   
   .play-button {
     display: inline-block;
     margin: 5px;
     padding: 15px 15px;
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: bolder;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
     outline: none;
-    color: slategrey;
-    background-color: #EFEFEF;
+    color: #382b22;
+    background-color: #fff;
     border: none;
     border-radius: 15px;
-    box-shadow: 0 9px #999;
+    box-shadow: 0 9px #f9c4d2;
   }
 
   .play-button:hover{
-    background-color: wheat
+    background-color: #ffe9e9;
 }
 
 
   .play-button:active {
-    box-shadow: 0 5px #666;
+    box-shadow: 0 0 0 2px #b18597, 0 0 #b18597;
     transform: translateY(4px);
 }
+
