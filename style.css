@@ -73,8 +73,27 @@
   }
   
   .play-button {
-    background-color: #4caf50;
-    font-size: 16px;
-    padding: 15px 30px;
+    display: inline-block;
+    margin: 5px;
+    padding: 15px 15px;
+    font-size: 24px;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: slategrey;
+    background-color: #EFEFEF;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
   }
+
+  .play-button:hover{
+    background-color: wheat
+}
+
+
+  .play-button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
