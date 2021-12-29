@@ -56,7 +56,7 @@
   
   .grid {
     display: grid;
-    grid-template-columns: 320px 200px;
+    grid-template-columns: 350px 200px;
   }
   
   .right-column {
