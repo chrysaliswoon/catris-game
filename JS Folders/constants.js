@@ -38,3 +38,15 @@ const moves = {
     [KEY.DOWN]: (p) => ({ ...p, y: p.y + 1}),
     [KEY.UP]: (p) => board.rotate(p),
 }
+
+// Generates the colors for each Tetromino shape
+const COLORS = ['cyan', 'yellow', 'purple', 'green', 'red', 'blue', 'orange'] // The colours are according to the Tetris standards
+const SHAPES = [
+    [[0, 0, 0, 0],[1, 1, 1, 1], [0, 0, 0, 0], [0, 0, 0, 0]], // Cyan I Tetromino
+    [[1, 1], [1, 1]], // Yellow O Tetromino
+    [[0, 1, 0], [1, 1, 1], [0, 0, 0]], // Purple T Tetromino
+    [[0, 1, 1], [1, 1, 0], [0, 0, 0]], // Green S Tetromino
+    [[1, 1, 0], [0, 1, 1], [0, 0, 0]], // Red Z Tetromino
+    [[1, 0, 0], [1, 1, 1], [0, 0, 0]], // Blue J Tetromino
+    [[0, 0, 1], [1, 1, 1], [0, 0, 0]], // Orange L Tetromino
+]

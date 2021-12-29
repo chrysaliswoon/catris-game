@@ -1,4 +1,4 @@
-// // This will initialise the game and execute the overall game logic for Tetris
+// This will initialise the game and execute the overall game logic for Tetris
 
 let board = new Board();
 
@@ -22,8 +22,8 @@ function addEventListener(){
 
 function play() {
     board = new Board(ctx);
-    // console.table(board.grid);
-    // draw();
+    // console.table(board.grid); => This is removed as we only needed it to identify the grids of our game board.
+    // draw(); => This is removed as we have replaced it with the AnimationFrame function
     addEventListener();
 
     if (requestId) {
@@ -41,7 +41,8 @@ function draw() {
     board.block.draw();
 }
 
-let time = {start: 0, elapsed: 0, level: 1000};
+// Object literal to keep track of when to move the Tetrominoes down a line. The smaller the number for the speed, the faster the Tetrominoes will move down
+let time = {start: 0, elapsed: 0, speed: 1000};
 
 
 // allows the block to drop down automatically
@@ -55,7 +56,7 @@ function drop() {
 function animate(now = 0) {
     time.elapsed = now - time.start
 
-    if (time.elapsed > time.level) {
+    if (time.elapsed > time.speed) {
         time.start = now;
 
         drop()

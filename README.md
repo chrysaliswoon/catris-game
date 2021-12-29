@@ -1,8 +1,8 @@
 # Developing a Tetris Game - Catris
 ## Description
-This is a classic Tetris game with a fun cat spin on it. The game was designed and implemented using HTML, CSS, and Javascript while attending the Software Engineering Immersive course at General Assembly.
+This is a classic [Tetris](https://tetris.com/play-tetris) game with a fun cat spin on it. The game was designed and implemented using HTML, CSS, and Javascript while attending the Software Engineering Immersive course at General Assembly.
 
-I chose to recreate this game as it was one of the games which I loved playing in my childhood and it's still addictive even in adulthood. The tile-matching game was created in 1984 by a Soviet engineer, Alexey Pajitnov, who loved puzzles. He developed it purely out of interest and didn't intend to make money out of it. He was inspired by a puzzle game called "pentominoes," in which different wooden shapes made of five equal squares are assembled in a box.
+I chose to recreate this game as it was one of the games which I loved playing in my childhood and it's still addictive even in adulthood. The tile-matching game was created in 1984 by a Soviet engineer, [Alexey Pajitnov](https://tetris.com/bios#alexey), who loved puzzles. He developed it purely out of interest and didn't intend to make money out of it. He was inspired by a puzzle game called "pentominoes," in which different wooden shapes made of five equal squares are assembled in a box.
 
 A lot of things which programmers create are usually based on things which currently exist all around us. I feel that this is what programming is to me. Creating things for the joy of it or because you want to use something which someone has not made by being inspired by your surroundings.
 
@@ -56,6 +56,10 @@ Using the plan and pseudocodes, I broke down the project into stages:
 
 When I was coding out the project, I made it a habit to comment on my codes frequently as I was still learning and I tend to forget certain concepts or code blocks which I have done or used before. This also meant that I also committed to GitHub frequently to log all of the changes to the project so I can retrieve an older version if necessary.
 
+As Tetris is a classic game which existed for quite a while, this meant that there might have been certain standards in terms of how the Tetris was formed, and how the Tetrominoes behaved. 
+
+According to the current Tetris guidelines, the standard for how Tetrominoes behave is known as the [Super Rotation System (SRS)](https://tetris.fandom.com/wiki/SRS)
+
 I also created notes and made a series of Medium articles which will give you insight into how I created the game:
 
 **Part 1 (Planning):** https://medium.com/@chrysaliswoon/combining-html-css-js-tetris-project-part-i-planning-cbe524c97a63
@@ -69,6 +73,7 @@ I also created notes and made a series of Medium articles which will give you in
 **Part 5 (Collision Detection):**
 
 **Part 6 (Tetromino Rotation):**
+
 
 **Part 7 (Randomization of Tetrominoes):**
 
