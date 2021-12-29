@@ -22,7 +22,7 @@ function addEventListener(){
 
 function play() {
     board = new Board(ctx);
-    // console.table(board.grid); => This is removed as we only needed it to identify the grids of our game board.
+    console.table(board.grid); // Identify where the Tetromino block is on the grids of our game board.
     // draw(); => This is removed as we have replaced it with the AnimationFrame function
     addEventListener();
 
