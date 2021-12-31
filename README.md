@@ -36,8 +36,8 @@ Different bricks called Tetriminos which are randomly generated will fall down. 
 
 I looked at various versions of Tetris to see how I can structure the visuals and structure of it, and you can take a look at some references I took in the Idea Board folder.
 
-## Wireframing & Prototype
-Before creating the code for the game, I created a wireframe and prototype using Figma. This allowed me to identify the various visual components of the game which will affect my HTML and CSS codes, and which parts I would need to make interactive, which affects the JS portion of my codes.
+## Ideation Sketch
+Before creating the code for the game, I drew out the different components of the game and everything I knew and could observe about the game mechanics. This allowed me to identify the various visual components of the game which will affect my HTML and CSS codes, and which parts I would need to make interactive, which affects the JS portion of my codes.
 
 ## Game Architecture
 In order to understand the various components which I will need to create, I first played a standard Tetris game and observed how the Tetrominoes moved, the size of the Tetris Board, and what are the different types of variables involved.
@@ -74,7 +74,6 @@ I also created notes and made a series of Medium articles which will give you in
 
 **Part 6 (Tetromino Rotation):**
 
-
 **Part 7 (Randomization of Tetrominoes):**
 
 **Part 8 (Game Loop & Timer):**
@@ -100,8 +99,8 @@ I also created notes and made a series of Medium articles which will give you in
 ## Future Developments / Improvements
 As this is created for a project submission, there might be no future iterations of this. However, if there were, these would be the future developments/improvements I would create:
 
-- Update the game visuals
-- 
+- Update the game visuals to make it more cat-themed and visually appealing
+- Recreate the game with shorter and more efficient codes independently
 
 ## Summary
 As this was my first time creating a project in a very tight timeframe, it was considered extremely ambitious for me to recreate the Tetris game. 
@@ -119,3 +118,5 @@ As JS is relatively new to me and there were a lot of concepts that I had to get
 - https://www.educative.io/courses/game-development-js-tetris
 - https://michael-karen.medium.com/learning-modern-javascript-with-tetris-92d532bcd057
 - https://www.youtube.com/watch?v=8zXlWbEgfiY&t=100s
+- https://www.youtube.com/watch?v=UdYri9Kx6Zs
+- 
