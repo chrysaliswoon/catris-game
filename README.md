@@ -106,7 +106,7 @@ As this is created for a project submission, there might be no future iterations
 ## Summary
 As this was my first time creating a project in a very tight timeframe, it was considered extremely ambitious for me to recreate the Tetris game. 
 
-However, the idea behind it was that by learning how others recreated the game, I would understand the logic flow behind it and how they linked the HTML, CSS and JS together. This would then allow me to complete create a game from scratch by myself. 
+However, the idea behind it was that by learning how others recreated the game, I would understand the logic flow behind it and how they linked the HTML, CSS and JS together. This would then allow me to create a game from scratch. 
 
 I also learn best by recreating someone's else work, deconstructing it, and then find a better way of going about it. 
 
