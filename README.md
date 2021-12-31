@@ -119,7 +119,7 @@ My philosophy is, "Don't reinvent the wheel. Analyse and observe how the wheel w
 ## References
 As JS is relatively new to me and there were a lot of concepts that I had to get used to. In order to start the ball rolling on my project, I referenced various sources in terms of how they created their Tetris game, and adapated and modified them to be mine as much as possible.
 
-- [Game Development - JS Tetris] (https://www.educative.io/courses/game-development-js-tetris)
-- [Learning Modern JS with Tetris] (https://michael-karen.medium.com/learning-modern-javascript-with-tetris-92d532bcd057)
-- [Building TETRIS - Game Development Tutorial] (https://www.youtube.com/watch?v=8zXlWbEgfiY&t=100s)
-- [Tetris SRS Mechanism Explained] (https://www.youtube.com/watch?v=UdYri9Kx6Zs)
+- [Game Development - JS Tetris](https://www.educative.io/courses/game-development-js-tetris)
+- [Learning Modern JS with Tetris](https://michael-karen.medium.com/learning-modern-javascript-with-tetris-92d532bcd057)
+- [Building TETRIS - Game Development Tutorial](https://www.youtube.com/watch?v=8zXlWbEgfiY&t=100s)
+- [Tetris SRS Mechanism Explained](https://www.youtube.com/watch?v=UdYri9Kx6Zs)
