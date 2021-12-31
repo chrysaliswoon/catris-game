@@ -96,6 +96,10 @@ I also created notes and made a series of Medium articles which will give you in
 
 4. We learned in class to use setInterval or setTimeout. However, for the Tetris game, I created a function called requestAnimationFrame() which paints a frame and reschedules itself. This is so we only see the Tetris block moving down when it is visible and it enables browser optimizations. This taught me that we might learn a concept, but depending on the usage, that concept might not be suitable for what we want.
 
+## Breakdown & Analysis of the Codes
+
+
+
 ## Future Developments / Improvements
 As this is created for a project submission, there might be no future iterations of this. However, if there were, these would be the future developments/improvements I would create:
 
@@ -115,8 +119,7 @@ My philosophy is, "Don't reinvent the wheel. Analyse and observe how the wheel w
 ## References
 As JS is relatively new to me and there were a lot of concepts that I had to get used to. In order to start the ball rolling on my project, I referenced various sources in terms of how they created their Tetris game, and adapated and modified them to be mine as much as possible.
 
-- https://www.educative.io/courses/game-development-js-tetris
-- https://michael-karen.medium.com/learning-modern-javascript-with-tetris-92d532bcd057
-- https://www.youtube.com/watch?v=8zXlWbEgfiY&t=100s
-- https://www.youtube.com/watch?v=UdYri9Kx6Zs
-- 
+- [Game Development - JS Tetris] (https://www.educative.io/courses/game-development-js-tetris)
+- [Learning Modern JS with Tetris] (https://michael-karen.medium.com/learning-modern-javascript-with-tetris-92d532bcd057)
+- [Building TETRIS - Game Development Tutorial] (https://www.youtube.com/watch?v=8zXlWbEgfiY&t=100s)
+- [Tetris SRS Mechanism Explained] (https://www.youtube.com/watch?v=UdYri9Kx6Zs)
