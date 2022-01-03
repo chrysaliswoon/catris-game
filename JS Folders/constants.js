@@ -9,7 +9,19 @@ const BLOCK_SIZE = 30; // Size of the Blocks
 // Generates the colors for each Tetromino shape
 // Each shape has a different number to represent it. If you were to assign it as 1s and 0s for all 7 shapes, what you will observe is that when the shapes fall to the bottom, the colors will all change to cyan (1).
 // Anything more than 0 means that that grid is colored.
-const COLORS = ['cyan', 'yellow', 'purple', 'green', 'red', 'blue', 'orange'] // The colours are according to the Tetris standards
+
+// The colours are according to the Tetris standards
+const COLORS = [
+    'cyan', 
+    'yellow', 
+    'purple', 
+    'green', 
+    'red', 
+    'blue', 
+    'orange'
+]
+
+// This generates the shape of each Tetromino block
 const SHAPES = [
     [[0, 0, 0, 0],[1, 1, 1, 1], [0, 0, 0, 0], [0, 0, 0, 0]], // Cyan I Tetromino
     [[2, 2], [2, 2]], // Yellow O Tetromino
