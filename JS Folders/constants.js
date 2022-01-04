@@ -50,7 +50,8 @@ const KEY = {
     LEFT: 37,
     UP: 38,
     RIGHT: 39,
-    DOWN: 40
+    DOWN: 40,
+    SPACE: 32
 }
 Object.freeze(KEY); // This freezes the values for the arrow keys so they can't be changed
 
@@ -61,3 +62,36 @@ const moves = {
     [KEY.DOWN]: (p) => ({ ...p, y: p.y + 1}),
     [KEY.UP]: (p) => board.rotate(p),
 }
+
+
+// Generate the score when the Tetris drops and lines are cleared
+
+const POINTS = { // Score numbers are according to https://tetris.wiki/Scoring
+    SINGLE: 100,
+    DOUBLE: 300,
+    TRIPLE: 500,
+    TETRIS: 800,
+    SOFT_DROP: 1, 
+    HARD_DROP: 2
+}
+Object.freeze(POINTS);
+
+let accountValues = {
+    score: 0,
+    lines: 0
+}
+
+function updateAccount(key, value) {
+    let element = document.getElementById(key)
+    if (element) {
+        element.textContent = value
+    }
+}
+
+let account = new Proxy(accountValues, {
+    set: (target, key, value) => {
+        target[key] = value;
+        updateAccount(key, value);
+        return true;
+    }
+})

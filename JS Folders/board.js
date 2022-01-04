@@ -68,7 +68,11 @@ class Board {
       if(this.valid(p)) {
         this.block.move(p);
       } else {
-        this.freeze();
+        this.freeze(); // Freeze the Tetromino blocks in place and generate a new block immediately.
+        this.clearLines() // Clears a line of Tetrimino blocks when they all align together.
+        if(this.block.y === 0) {
+          return false;
+        }
         this.block = new Block(this.ctx)
       }
     }
@@ -92,5 +96,27 @@ class Board {
           }
         })
       })
+    }
+
+    clearLines() {
+      this.grid.forEach((row, y) => {
+        if(row.every(value => value > 0)) { // If the value in the row is all greater than 0 then
+          lines++; 
+          this.grid.splice(y, 1) // remove the row
+
+          this.grid.unshift(Array(COL).fill(0)) // and replace it with 0 to clear the colour.
+          if(lines > 0) {
+            account.score += this.getLineClearPoints(lines)
+          }
+        }
+      })
+    }
+
+    getLineClearPoints(lines) {
+      return lines === 1 ? POINTS.SINGLE:
+             lines === 2 ? POINTS.SINGLE:
+             lines === 3 ? POINTS.SINGLE:
+             lines === 4 ? POINTS.SINGLE:
+             0;
     }
 }

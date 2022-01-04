@@ -55,19 +55,21 @@ body {
     text-decoration: none;
     outline: none;
     color: #382b22;
-    background-color: #fff;
+    /* background-color: #fff; */
     border: none;
     border-radius: 15px;
-    box-shadow: 0 9px #f9c4d2;
+    /* box-shadow: 0 9px #f9c4d2; */
+    max-width: 50%;
+    height: auto;
   }
 
   .play-button:hover{
-    background-color: #ffe9e9;
+    /* background-color: #ffe9e9; */
 }
 
 
   .play-button:active {
-    box-shadow: 0 0 0 2px #b18597, 0 0 #b18597;
+    /* box-shadow: 0 0 0 2px #b18597, 0 0 #b18597; */
     transform: translateY(4px);
 }
 

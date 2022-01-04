@@ -10,7 +10,16 @@ function handleKeyPress(event) {
 
         if (board.valid(p)) { // Connects to the board.js to detect the wall for collision
             board.block.move(p);
+            account.score += POINTS.HARD_DROP;
+            p = moves [KEY.SPACE](board.block);
             // draw();
+        }
+    }
+
+    if (board.valid(p)) {
+        board.block.move(p);
+        if(event.keyCode === KEY.DOWN) {
+            account.score += POINTS.SOFT_DROP
         }
     }
 }
@@ -73,3 +82,4 @@ function animate(now = 0) {
     draw()
     requestId = requestAnimationFrame(animate)
 }
+
