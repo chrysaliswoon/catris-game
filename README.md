@@ -38,7 +38,7 @@ The goal of Tetris is to score as many points as possible by clearing horizontal
 
 As lines are cleared, the level increases and Tetriminos fall faster, making the game progressively more challenging. If the Blocks land above the top of the playing field, the game is over.
 
-![Tetris Instruction](Image Assets/TetrisKeyboard.png)
+![Tetris Instruction](https://github.com/chrysaliswoon/CatrisProject/blob/main/Image%20Assets/TetrisKeyboard.png?raw=true)
 
 ## High Concept
 Different bricks called Tetriminos which are randomly generated will fall down. Players will use the arrow keys to rotate, move, and drop the Tetriminos. Players will attempt to clear as many lines as possible by completing horizontal rows of blocks without any empty spaces, but if the Tetriminos surpass the Skyline the game is over!
