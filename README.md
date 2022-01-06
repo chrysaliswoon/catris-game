@@ -31,6 +31,15 @@ A lot of things which programmers create are usually based on things which curre
 ## Deployment
 The game is deployed on GitHub pages, and you can play the game here: https://chrysaliswoon.github.io/CatrisProject/
 
+## How To Play
+Instructions and gameplay image were taken from the [official Tetris website](https://tetris.com/play-tetris/?utm_source=top_nav_link&utm_medium=webnav&utm_campaign=playNow_btm_tst&utm_content=text_play_now
+)
+The goal of Tetris is to score as many points as possible by clearing horizontal lines of Blocks. The player must rotate, move, and drop the falling Tetriminos inside the Matrix (playing field). Lines are cleared when they are filled with Blocks and have no empty spaces.
+
+As lines are cleared, the level increases and Tetriminos fall faster, making the game progressively more challenging. If the Blocks land above the top of the playing field, the game is over.
+
+![Tetris Instruction](Image Assets/TetrisKeyboard.png)
+
 ## High Concept
 Different bricks called Tetriminos which are randomly generated will fall down. Players will use the arrow keys to rotate, move, and drop the Tetriminos. Players will attempt to clear as many lines as possible by completing horizontal rows of blocks without any empty spaces, but if the Tetriminos surpass the Skyline the game is over!
 
