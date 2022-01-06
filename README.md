@@ -48,12 +48,16 @@ I looked at various versions of Tetris to see how I can structure the visuals an
 ## Ideation Sketch
 Before creating the code for the game, I drew out the different components of the game and everything I knew and could observe about the game mechanics. This allowed me to identify the various visual components of the game which will affect my HTML and CSS codes, and which parts I would need to make interactive, which affects the JS portion of my codes.
 
+![Code Framework]()
+
 ## Game Architecture
 In order to understand the various components which I will need to create, I first played a standard Tetris game and observed how the Tetrominoes moved, the size of the Tetris Board, and what are the different types of variables involved.
 
 Afterwards, I deconstructed it and drew out the various components:
 
+![Components of Tetris](https://github.com/chrysaliswoon/CatrisProject/blob/main/Notes%20&%20Resources/Project%201%20Tetris%20Plan-1%20.jpg?raw=true)
 
+I used a grid paper to identify how big the board and Tetrominoes should be. 
 
 ## Approach to Development
 Using the plan and pseudocodes, I broke down the project into stages:
