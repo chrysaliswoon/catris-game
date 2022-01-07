@@ -1,10 +1,4 @@
 # Developing a Tetris Game - Catris
-## Description
-This is a classic [Tetris](https://tetris.com/play-tetris) game with a fun cat spin on it. The game was designed and implemented using HTML, CSS, and Javascript while attending the Software Engineering Immersive course at General Assembly.
-
-I chose to recreate this game as it was one of the games which I loved playing in my childhood and it's still addictive even in adulthood. The tile-matching game was created in 1984 by a Soviet engineer, [Alexey Pajitnov](https://tetris.com/bios#alexey), who loved puzzles. He developed it purely out of interest and didn't intend to make money out of it. He was inspired by a puzzle game called "pentominoes," in which different wooden shapes made of five equal squares are assembled in a box.
-
-A lot of things which programmers create are usually based on things which currently exist all around us. I feel that this is what programming is to me. Creating things for the joy of it or because you want to use something which someone has not made by being inspired by your surroundings.
 
 ## Project Brief
 **MVP - Minimum Viable Product** 
@@ -28,8 +22,28 @@ A lot of things which programmers create are usually based on things which curre
 - JavaScript
 - Git & GitHub
 
+<br>
+
+## Description
+This is a classic [Tetris](https://tetris.com/play-tetris) game with a fun cat spin on it. The game was designed and implemented using HTML, CSS, and Javascript while attending the Software Engineering Immersive course at General Assembly.
+
+I chose to recreate this game as it was one of the games which I loved playing in my childhood and it's still addictive even in adulthood. The tile-matching game was created in 1984 by a Soviet engineer, [Alexey Pajitnov](https://tetris.com/bios#alexey), who loved puzzles. He developed it purely out of interest and didn't intend to make money out of it. He was inspired by a puzzle game called "pentominoes," in which different wooden shapes made of five equal squares are assembled in a box.
+
+A lot of things which programmers create are usually based on things which currently exist all around us. I feel that this is what programming is to me. Creating things for the joy of it or because you want to use something which someone has not made by being inspired by your surroundings.
+
+<br>
+
+## High Concept
+Different bricks called Tetriminos which are randomly generated will fall down. Players will use the arrow keys to rotate, move, and drop the Tetriminos. Players will attempt to clear as many lines as possible by completing horizontal rows of blocks without any empty spaces, but if the Tetriminos surpass the Skyline the game is over!
+
+I looked at various versions of Tetris to see how I can structure the visuals and structure of it, and you can take a look at some references I took in the Idea Board folder.
+
+<br>
+
 ## Deployment
 The game is deployed on GitHub pages, and you can play the game here: https://chrysaliswoon.github.io/CatrisProject/
+
+<br>
 
 ## How To Play
 Instructions and gameplay image were taken from the [official Tetris website](https://tetris.com/play-tetris/?utm_source=top_nav_link&utm_medium=webnav&utm_campaign=playNow_btm_tst&utm_content=text_play_now
@@ -40,15 +54,14 @@ As lines are cleared, the level increases and Tetriminos fall faster, making the
 
 ![Tetris Instruction](https://github.com/chrysaliswoon/CatrisProject/blob/main/Notes%20&%20Resources/TetrisKeyboard.png?raw=true)
 
-## High Concept
-Different bricks called Tetriminos which are randomly generated will fall down. Players will use the arrow keys to rotate, move, and drop the Tetriminos. Players will attempt to clear as many lines as possible by completing horizontal rows of blocks without any empty spaces, but if the Tetriminos surpass the Skyline the game is over!
-
-I looked at various versions of Tetris to see how I can structure the visuals and structure of it, and you can take a look at some references I took in the Idea Board folder.
+<br>
 
 ## Ideation Sketch
 Before creating the code for the game, I drew out the different components of the game and everything I knew and could observe about the game mechanics. This allowed me to identify the various visual components of the game which will affect my HTML and CSS codes, and which parts I would need to make interactive, which affects the JS portion of my codes.
 
-![Code Framework]()
+![Code Framework](https://github.com/chrysaliswoon/CatrisProject/blob/main/Notes%20&%20Resources/Project%201%20Tetris%20Plan-2.jpg?raw=true)
+
+<br>
 
 ## Game Architecture
 In order to understand the various components which I will need to create, I first played a standard Tetris game and observed how the Tetrominoes moved, the size of the Tetris Board, and what are the different types of variables involved.
@@ -58,6 +71,8 @@ Afterwards, I deconstructed it and drew out the various components:
 ![Components of Tetris](https://github.com/chrysaliswoon/CatrisProject/blob/main/Notes%20&%20Resources/Project%201%20Tetris%20Plan-1%20.jpg?raw=true)
 
 I used a grid paper to identify how big the board and Tetrominoes should be. 
+
+<br>
 
 ## Approach to Development
 Using the plan and pseudocodes, I broke down the project into stages:
@@ -77,9 +92,9 @@ I also created notes and made a series of Medium articles which will give you in
 
 **Part 1 (Planning):** https://medium.com/@chrysaliswoon/combining-html-css-js-tetris-project-part-i-planning-cbe524c97a63
 
-**Part 2 (Creating the Visuals):**
+**Part 2 (Creating the Visuals):** https://medium.com/@chrysaliswoon/combining-html-css-js-tetris-project-part-2-creating-the-visuals-7ec41d3cde0c 
 
-**Part 3 (Creating the Tetrominoes):**
+**Part 3 (Creating the Tetrominoes):** 
 
 **Part 4 (Keyboard Input):**
 
@@ -100,24 +115,32 @@ I also created notes and made a series of Medium articles which will give you in
 **Part 12 (Creating High Scores):**
 
 
-## Key Learnings
-1. In order to rotate the Tetromino pieces, I learned that instead of creating different variations of the matrices and looping through them, an easier way would be to use the rotation matrix, which required knowledge of linear algebra. 
+<br>
 
-2. Through the project, I learned concepts and terms like JSON, Classes, Immutability, Destructuring and Proxy. 
+## Key Learnings
+1. Through the project, I learned concepts and terms like JSON, Classes, Immutability, Destructuring and Proxy. 
+
+2. In order to rotate the Tetromino pieces, I found out that instead of creating different variations of the matrices and looping through them, an easier way would be to use the rotation matrix, which required knowledge of linear algebra. 
 
 3. With a project as complex as Tetris, it helps to separate the JS files for each main component so you can identify the errors and bugs. But at the same time, this meant that sometimes you might not know where a particular code is referencing it from.
 
 4. We learned in class to use setInterval or setTimeout. However, for the Tetris game, I created a function called requestAnimationFrame() which paints a frame and reschedules itself. This is so we only see the Tetris block moving down when it is visible and it enables browser optimizations. This taught me that we might learn a concept, but depending on the usage, that concept might not be suitable for what we want.
 
+<br>
+
 ## Breakdown & Analysis of the Codes
 
 
+<br>
 
 ## Future Developments / Improvements
 As this is created for a project submission, there might be no future iterations of this. However, if there were, these would be the future developments/improvements I would create:
 
 - Update the game visuals to make it more cat-themed and visually appealing
 - Recreate the game with shorter and more efficient codes independently
+
+
+<br>
 
 ## Summary
 As this was my first time creating a project in a very tight timeframe, it was considered extremely ambitious for me to recreate the Tetris game. 
@@ -128,6 +151,7 @@ I also learn best by recreating someone's else work, deconstructing it, and then
 
 My philosophy is, "Don't reinvent the wheel. Analyse and observe how the wheel works, the thought process behind creating it, the mechanics of it, and then deconstruct it, and make it better through reconstructing."
 
+<br>
 
 ## References
 As JS is relatively new to me and there were a lot of concepts that I had to get used to. In order to start the ball rolling on my project, I referenced various sources in terms of how they created their Tetris game, and adapated and modified them to be mine as much as possible.

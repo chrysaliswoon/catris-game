@@ -1,10 +1,18 @@
 // This is where the different configurations and rules for the game will be stored that won't change such as the size of the board.
 
+// Drawing the Canvas // 
+// The document object provides a programmable interface for the HTML document. 
+// The document has a tree-like structure and is often referred to as the DOM (Document Object Model).
+const canvas = document.getElementById('board'); // We can call the getElementById method to access elements from the DOM.
+const ctx = canvas.getContext('2d'); // The HTMLCanvasElement.getContext() method returns a drawing context on the canvas, or null if the context identifier is not supported, or the canvas has already been set to a different context mode.
+
+
+// Tetris Board //
 // The Tetris board has a width of 20 (row), and height of 10 (col). In the event that this number changes (highly unlikely), the variable type will be changed to "Let".
-// Tetris Board
 const COL = 10; // Width of the board is 10 columns
 const ROW = 20; // Height of the board is 20 rows
 const BLOCK_SIZE = 30; // Size of the Blocks
+
 
 // Generates the colors for each Tetromino shape
 // Each shape has a different number to represent it. If you were to assign it as 1s and 0s for all 7 shapes, what you will observe is that when the shapes fall to the bottom, the colors will all change to cyan (1).
@@ -31,16 +39,6 @@ const SHAPES = [
     [[6, 0, 0], [6, 6, 6], [0, 0, 0]], // Blue J Tetromino
     [[0, 0, 7], [7, 7, 7], [0, 0, 0]], // Orange L Tetromino
 ]
-
-// Drawing the Canvas // 
-// The document object provides a programmable interface for the HTML document. 
-// The document has a tree-like structure and is often referred to as the DOM (Document Object Model).
-const canvas = document.getElementById('board'); // We can call the getElementById method to access elements from the DOM.
-const ctx = canvas.getContext('2d'); // The HTMLCanvasElement.getContext() method returns a drawing context on the canvas, or null if the context identifier is not supported, or the canvas has already been set to a different context mode.
-
-// Calculate the size of the Tetris Board (Canvas) from our constants.js // 
-ctx.canvas.width = COL * BLOCK_SIZE;
-ctx.canvas.height = ROW * BLOCK_SIZE;
 
 // Scales our Tetromino Blocks //
 ctx.scale(BLOCK_SIZE, BLOCK_SIZE);

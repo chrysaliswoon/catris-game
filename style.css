@@ -21,6 +21,8 @@ body {
     font-size: 40px; 
   }
 
+  /* Styling for the Tetris Board*/
+
   .grid {
     display: grid;
     grid-template-columns: 350px 200px;
@@ -44,6 +46,7 @@ body {
     border: solid 3px;
   }
   
+  /* Styling for the Play Button*/
   .play-button {
     display: inline-block;
     margin: 5px;
