@@ -13,6 +13,9 @@ const COL = 10; // Width of the board is 10 columns
 const ROW = 20; // Height of the board is 20 rows
 const BLOCK_SIZE = 30; // Size of the Blocks
 
+// Calculate the size of the Tetris Board (Canvas) from our constants.js // 
+ctx.canvas.width = COL * BLOCK_SIZE;
+ctx.canvas.height = ROW * BLOCK_SIZE;
 
 // Generates the colors for each Tetromino shape
 // Each shape has a different number to represent it. If you were to assign it as 1s and 0s for all 7 shapes, what you will observe is that when the shapes fall to the bottom, the colors will all change to cyan (1).
