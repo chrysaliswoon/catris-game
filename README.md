@@ -122,7 +122,7 @@ I also created notes and made a series of Medium articles which will give you in
 
 2. In order to rotate the Tetromino pieces, I found out that instead of creating different variations of the matrices and looping through them, an easier way would be to use the rotation matrix, which required knowledge of linear algebra. 
 
-3. With a project as complex as Tetris, it helps to separate the JS files for each main component so you can identify the errors and bugs. But at the same time, this meant that sometimes you might not know where a particular code is referencing it from.
+3. With a project as complex as Tetris, it helps to separate the JS files for each main component so you can identify the errors and bugs. But at the same time, this meant that sometimes you might not know where a particular code is referencing it from if you don't label your functions and variables in a way which makes sense. Commenting on your codes will also help you identify what a particular section of code does, making it easier to debug.
 
 4. We learned in class to use setInterval or setTimeout. However, for the Tetris game, I created a function called requestAnimationFrame() which paints a frame and reschedules itself. This is so we only see the Tetris block moving down when it is visible and it enables browser optimizations. This taught me that we might learn a concept, but depending on the usage, that concept might not be suitable for what we want.
 
@@ -132,14 +132,7 @@ I also created notes and made a series of Medium articles which will give you in
 Below is a breakdown and analysis of some of the codes which I have categorised according to the concepts we have covered in class.
 
 ### Week 1: Conditionals, Booleans, Loop
-A Boolean is a system of logical thought developed by the English mathematician George Boole.
-
-<br>
-
-We will use a number of operators to determine whether a condition is true or false.
-
-<br>
-
+A Boolean is a system of logical thought developed by the English mathematician George Boole. We will use a number of operators to determine whether a condition is true or false.
 
 
 ### Week 1: Arrays & Iteration
@@ -161,8 +154,8 @@ We will use a number of operators to determine whether a condition is true or fa
 ## Future Developments / Improvements
 As this is created for a project submission, there might be no future iterations of this. However, if there were, these would be the future developments/improvements I would create:
 
-- Update the game visuals to make it more cat-themed and visually appealing
-- Recreate the game with shorter and more efficient codes independently
+- Update the game visuals to make it more cat-themed and visually appealing.
+- Recreate the game with shorter and more efficient codes independently.
 
 
 <br>
