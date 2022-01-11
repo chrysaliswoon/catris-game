@@ -4,7 +4,7 @@
 
 let requestId = null;
 
-class Board {  
+export class Board {  
     constructor(ctx) {
       this.ctx = ctx;
       this.grid = this.getEmptyBoard();
