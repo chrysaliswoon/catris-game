@@ -1,11 +1,21 @@
 /* =================================== This will initialise the game and execute the overall game logic for Tetris ========================================================================================================================== 
 
+Show Levels
+
+- We will show the player which level they are currently on by initializing a value for the levels and lines. 
+- This means that when we start a new game, we will need to reset these values too.
 */
-
-
 
 let board = new Board();
 
+// Show Levels //
+let accountValues = {
+    score: 0,
+    lines: 0,
+    level: 0,
+}
+
+// Arrow Key Functions //
 function handleKeyPress(event) {
     event.preventDefault(); // Stop the event from bubbling
 
@@ -86,3 +96,20 @@ function animate(now = 0) {
     draw()
     requestId = requestAnimationFrame(animate)
 }
+
+
+
+function updateAccount(key, value) {
+    let element = document.getElementById(key);
+    if (element) {
+        element.textContent = value;
+    }
+}
+
+let account = new Proxy(accountValues, {
+    set: (target, key, value) => {
+        target[key] = value;
+        updateAccount(key, value);
+        return true;
+    }
+})

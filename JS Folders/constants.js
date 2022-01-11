@@ -169,25 +169,3 @@ const LEVEL_SPEED = {
 }
 
 Object.freeze(LEVEL_SPEED);
-
-// Updates the Score //
-let accountValues = {
-    score: 0,
-    lines: 0,
-    level: 0,
-}
-
-function updateAccount(key, value) {
-    let element = document.getElementById(key);
-    if (element) {
-        element.textContent = value;
-    }
-}
-
-let account = new Proxy(accountValues, {
-    set: (target, key, value) => {
-        target[key] = value;
-        updateAccount(key, value);
-        return true;
-    }
-})
