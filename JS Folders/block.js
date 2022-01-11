@@ -14,7 +14,7 @@ class Block {
     this.color = COLORS[typeID]
 
     // Starting position of the Tetromino
-    this.x = 3;
+    this.x = 0;
     this.y = 0;
   }
 

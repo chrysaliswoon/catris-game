@@ -38,7 +38,8 @@ function draw() {
 }
 
 function play() {
-    board = new Board(ctx);
+    // board = new Board(ctx);
+    resetGame();
     console.table(board.grid); // Identify where the Tetromino block is on the grids of our game board.
     // draw(); => This is removed as we have replaced it with the AnimationFrame function
     addEventListener();
@@ -76,9 +77,30 @@ function animate(now = 0) {
     if (time.elapsed > time.speed) {
         time.start = now;
 
-        board.drop()
+        if(!board.drop()) {
+            gameOver();
+            return;
+        }
+        // board.drop()
     }
 
     draw()
     requestId = requestAnimationFrame(animate)
+}
+
+function resetGame() {
+    account.score = 0;
+    account.lines = 0;
+    account.level = 0;
+    board = new Board(ctx, ctxNext);
+    time = { start: performance.now(), elapsed: 0, level: LEVEL_SPEED[0]}
+}
+
+function gameOver(){
+    cancelAnimationFrame(requestId);
+    ctx.fillStyle = 'black';
+    ctx.fillRect(1, 3, 5, 1.2);
+    ctx.font = '1px Arial';
+    ctx.fillStyle = 'red';
+    ctx.fillText('Game Over!', 1.8, 4);
 }

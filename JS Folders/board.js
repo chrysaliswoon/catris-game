@@ -3,12 +3,16 @@
 // When we create a new instance of board, we connect it with the canvas context. 
 
 let requestId = null;
+let board = null,
 
 class Board {  
-    constructor(ctx) {
+    constructor(ctx, ctxNext) {
       this.ctx = ctx;
+      this.ctxNext = ctxNext; 
       this.grid = this.getEmptyBoard();
-      this.block = new Block(ctx);
+      this.setNextPiece();
+      this.setCurrentBlock;
+      // this.block = new Block(ctx);
     }
 
     // In Tetris, the board consists of cells, which are either occupied or empty.
@@ -73,7 +77,8 @@ class Board {
         if(this.block.y === 0) {
           return false;
         }
-        this.block = new Block(this.ctx)
+        // this.block = new Block(this.ctx)
+        this.setCurrentBlock();
       }
       return true;
     }
@@ -104,22 +109,48 @@ class Board {
       this.grid.forEach((row, y) => {
         if(row.every(value => value > 0)) { // If the value in the row is all greater than 0 then
           lines++; // Increase score when line is cleared
-          
+
           this.grid.splice(y, 1) // remove the row
 
           this.grid.unshift(Array(COL).fill(0)) // and replace it with 0 to clear the colour.
           if(lines > 0) {
             account.score += this.getLineClearPoints(lines)
+            account.lines += lines
+
+            if(account.lines >= LINES_PER_LEVEL) {
+              account.level++;
+
+              account.lines -= LINES_PER_LEVEL;
+
+              time.level = LEVEL_SPEED[account.level]
+            }
           }
         }
       })
     }
 
     getLineClearPoints(lines) {
-      return lines === 1 ? POINTS.SINGLE:
-             lines === 2 ? POINTS.SINGLE:
-             lines === 3 ? POINTS.SINGLE:
-             lines === 4 ? POINTS.SINGLE:
-             0;
+      const lineClearPoints = 
+        lines === 1 ? POINTS.SINGLE:
+        lines === 2 ? POINTS.DOUBLE:
+        lines === 3 ? POINTS.TRIPLE:
+        lines === 4 ? POINTS.TETRIS:
+        0;
+
+      return (account.level + 1) * lineClearPoints;
+    }
+
+    setNextBlock() {
+      const { width, height} = this.ctxNext.canvas;
+      this.ctxNextBlock = new Block(this.ctxNext);
+      this.ctxNext.clearRect(0, 0, width, height);
+      this.ctxNextBlock.draw();
+    }
+
+    setCurrentBlock() {
+      this.block = this.nextBlock;
+      this.block.ctx = this.ctx;
+      this.piece.x = 3;
+      this.setNextBlock();
     }
 }
