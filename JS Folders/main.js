@@ -1,7 +1,5 @@
 // This will initialise the game and execute the overall game logic for Tetris
 
-import Board from "./board"
-
 let board = new Board();
 
 function handleKeyPress(event) {
@@ -84,5 +82,3 @@ function animate(now = 0) {
     draw()
     requestId = requestAnimationFrame(animate)
 }
-
-export default ()

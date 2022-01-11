@@ -4,7 +4,7 @@
 
 let requestId = null;
 
-export class Board {  
+class Board {  
     constructor(ctx) {
       this.ctx = ctx;
       this.grid = this.getEmptyBoard();
@@ -75,6 +75,7 @@ export class Board {
         }
         this.block = new Block(this.ctx)
       }
+      return true;
     }
 
     freeze() {
@@ -99,9 +100,11 @@ export class Board {
     }
 
     clearLines() {
+      let lines = 0;
       this.grid.forEach((row, y) => {
         if(row.every(value => value > 0)) { // If the value in the row is all greater than 0 then
-          lines++; 
+          lines++; // Increase score when line is cleared
+          
           this.grid.splice(y, 1) // remove the row
 
           this.grid.unshift(Array(COL).fill(0)) // and replace it with 0 to clear the colour.
