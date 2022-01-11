@@ -13,6 +13,10 @@ Empty Tetris Board
 Tetris Rotation 
 
 - Rotates the Tetris block
+
+Increase Points 
+
+- To increase the points as more line clears, we multiply the points with the current level and add one as we start on level 0.
 ===========================================================================================================================================================================================================
 */
 
@@ -130,11 +134,14 @@ class Board {
       })
     }
 
+    // Increase Points //
     getLineClearPoints(lines) {
-      return lines === 1 ? POINTS.SINGLE:
-             lines === 2 ? POINTS.SINGLE:
-             lines === 3 ? POINTS.SINGLE:
-             lines === 4 ? POINTS.SINGLE:
-             0;
+      const getLineClearPoints = 
+            lines === 1 ? POINTS.SINGLE:
+            lines === 2 ? POINTS.DOUBLE:
+            lines === 3 ? POINTS.TRIPLE:
+            lines === 4 ? POINTS.TETRIS:
+            0;
+      return (account.level + 1) * this.getLineClearPoints;
     }
 }
