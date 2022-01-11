@@ -129,7 +129,32 @@ I also created notes and made a series of Medium articles which will give you in
 <br>
 
 ## Breakdown & Analysis of the Codes
+Below is a breakdown and analysis of some of the codes which I have categorised according to the concepts we have covered in class.
 
+### Week 1: Conditionals, Booleans, Loop
+A Boolean is a system of logical thought developed by the English mathematician George Boole.
+
+<br>
+
+We will use a number of operators to determine whether a condition is true or false.
+
+<br>
+
+
+
+### Week 1: Arrays & Iteration
+
+### Week 2: Functions, Scope
+
+### Week 2: Program Design, Objects
+
+### Week 3: Callbacks, Array Methods
+
+### Week 3: Object Methods, Classes
+
+### Week 4: DOM Manipulation
+
+### Week 5: Event Bubbling
 
 <br>
 
