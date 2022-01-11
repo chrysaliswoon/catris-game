@@ -4,6 +4,10 @@ Show Levels
 
 - We will show the player which level they are currently on by initializing a value for the levels and lines. 
 - This means that when we start a new game, we will need to reset these values too.
+
+Reset Game
+
+- When the game resets, we need to reset all of the values through our account proxy and the time and board that was previously running will be reset.
 */
 
 let board = new Board();
@@ -14,6 +18,21 @@ let accountValues = {
     lines: 0,
     level: 0,
 }
+
+function updateAccount(key, value) {
+    let element = document.getElementById(key);
+    if (element) {
+        element.textContent = value;
+    }
+}
+
+let account = new Proxy(accountValues, {
+    set: (target, key, value) => {
+        target[key] = value;
+        updateAccount(key, value);
+        return true;
+    }
+})
 
 // Arrow Key Functions //
 function handleKeyPress(event) {
@@ -52,7 +71,8 @@ function draw() {
 }
 
 function play() {
-    board = new Board(ctx);
+    // board = new Board(ctx); // Moved to resetGame()
+    resetGame();
     console.table(board.grid); // Identify where the Tetromino block is on the grids of our game board.
     // draw(); => This is removed as we have replaced it with the AnimationFrame function
     addEventListener();
@@ -61,7 +81,7 @@ function play() {
         cancelAnimationFrame(requestId);
     }
     
-    time.start = performance.now();
+    // time.start = performance.now(); // Moved to resetGame() function
     animate();
 }
 
@@ -73,7 +93,7 @@ function play() {
 // }
 
 // Object literal to keep track of when to move the Tetrominoes down a line. The smaller the number for the speed, the faster the Tetrominoes will move down
-let time = {start: 0, elapsed: 0, speed: 1000};
+// let time = {start: 0, elapsed: 0, speed: 1000}; // Moved to resetGame()
 
 
 // allows the block to drop down automatically
@@ -97,19 +117,12 @@ function animate(now = 0) {
     requestId = requestAnimationFrame(animate)
 }
 
+// Reset Game //
 
-
-function updateAccount(key, value) {
-    let element = document.getElementById(key);
-    if (element) {
-        element.textContent = value;
-    }
+function resetGame() {
+    account.score = 0;
+    account.lines = 0;
+    account.level = 0;
+    board = new Board(ctx);
+    time = {start: 0, elapsed: 0, speed: LEVEL_SPEED[0]};
 }
-
-let account = new Proxy(accountValues, {
-    set: (target, key, value) => {
-        target[key] = value;
-        updateAccount(key, value);
-        return true;
-    }
-})
