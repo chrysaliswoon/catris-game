@@ -128,7 +128,15 @@ class Board {
 
           this.grid.unshift(Array(COL).fill(0)) // and replace it with 0 to clear the colour.
           if(lines > 0) {
-            account.score += this.getLineClearPoints(lines)
+            account.score += this.getLineClearPoints(lines);
+            account.lines += lines
+
+            if (account.lines >= LINES_PER_LEVEL) { // If player has reached the required number of lines for the next level
+              account.level++; // go to the next level
+
+              account.lines -= LINES_PER_LEVEL; // Remove the lines to start on the next level
+              time.level = LEVEL_SPEED[account.level]; // Increase the speed in the next level
+            }
           }
         }
       })
