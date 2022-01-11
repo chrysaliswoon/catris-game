@@ -10,8 +10,8 @@ class Board {
       this.ctx = ctx;
       this.ctxNext = ctxNext; 
       this.grid = this.getEmptyBoard();
-      this.setNextPiece();
-      this.setCurrentBlock;
+      this.setNextBlock();
+      this.setCurrentBlock();
       // this.block = new Block(ctx);
     }
 
@@ -114,7 +114,7 @@ class Board {
 
           this.grid.unshift(Array(COL).fill(0)) // and replace it with 0 to clear the colour.
           if(lines > 0) {
-            account.score += this.getLineClearPoints(lines)
+            account.score += this.getLineClearPoints(lines);
             account.lines += lines
 
             if(account.lines >= LINES_PER_LEVEL) {
@@ -142,15 +142,15 @@ class Board {
 
     setNextBlock() {
       const { width, height} = this.ctxNext.canvas;
-      this.ctxNextBlock = new Block(this.ctxNext);
+      this.nextBlock = new Block(this.ctxNext);
       this.ctxNext.clearRect(0, 0, width, height);
-      this.ctxNextBlock.draw();
+      this.NextBlock.draw();
     }
 
     setCurrentBlock() {
       this.block = this.nextBlock;
       this.block.ctx = this.ctx;
-      this.piece.x = 3;
+      this.block.x = 3;
       this.setNextBlock();
     }
 }
