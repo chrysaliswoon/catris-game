@@ -1,18 +1,29 @@
-// This will generate the Board for the game
-// We can create a new Board when starting a new game and a new Piece every time a new piece enters the game.
-// When we create a new instance of board, we connect it with the canvas context. 
+/* =================================== This will generate the Board for the game =================================== 
+
+- We can create a new Board when starting a new game and a new Piece every time a new piece enters the game.
+- When we create a new instance of board, we connect it with the canvas context. 
+
+Empty Tetris Board
+
+- In Tetris, the board consists of cells, which are either occupied or empty.
+- We will represent empty cells with 0 and a filled cell with 1. 
+- Below is a method that returns an empty board with all cells set to zero. We can use the fill() array method that changes all array elements with a static value.
+- Used an array of numbers to represent a row and an array of rows to represent the board.
+
+Tetris Rotation 
+
+- Rotates the Tetris block
+
+*/
+
 
 let requestId = null;
-let board = null,
 
 class Board {  
-    constructor(ctx, ctxNext) {
+    constructor(ctx) {
       this.ctx = ctx;
-      this.ctxNext = ctxNext; 
       this.grid = this.getEmptyBoard();
-      this.setNextBlock();
-      this.setCurrentBlock();
-      // this.block = new Block(ctx);
+      this.block = new Block(ctx);
     }
 
     // In Tetris, the board consists of cells, which are either occupied or empty.
@@ -77,8 +88,7 @@ class Board {
         if(this.block.y === 0) {
           return false;
         }
-        // this.block = new Block(this.ctx)
-        this.setCurrentBlock();
+        this.block = new Block(this.ctx)
       }
       return true;
     }
@@ -109,48 +119,22 @@ class Board {
       this.grid.forEach((row, y) => {
         if(row.every(value => value > 0)) { // If the value in the row is all greater than 0 then
           lines++; // Increase score when line is cleared
-
+          
           this.grid.splice(y, 1) // remove the row
 
           this.grid.unshift(Array(COL).fill(0)) // and replace it with 0 to clear the colour.
           if(lines > 0) {
-            account.score += this.getLineClearPoints(lines);
-            account.lines += lines
-
-            if(account.lines >= LINES_PER_LEVEL) {
-              account.level++;
-
-              account.lines -= LINES_PER_LEVEL;
-
-              time.level = LEVEL_SPEED[account.level]
-            }
+            account.score += this.getLineClearPoints(lines)
           }
         }
       })
     }
 
     getLineClearPoints(lines) {
-      const lineClearPoints = 
-        lines === 1 ? POINTS.SINGLE:
-        lines === 2 ? POINTS.DOUBLE:
-        lines === 3 ? POINTS.TRIPLE:
-        lines === 4 ? POINTS.TETRIS:
-        0;
-
-      return (account.level + 1) * lineClearPoints;
-    }
-
-    setNextBlock() {
-      const { width, height} = this.ctxNext.canvas;
-      this.nextBlock = new Block(this.ctxNext);
-      this.ctxNext.clearRect(0, 0, width, height);
-      this.NextBlock.draw();
-    }
-
-    setCurrentBlock() {
-      this.block = this.nextBlock;
-      this.block.ctx = this.ctx;
-      this.block.x = 3;
-      this.setNextBlock();
+      return lines === 1 ? POINTS.SINGLE:
+             lines === 2 ? POINTS.SINGLE:
+             lines === 3 ? POINTS.SINGLE:
+             lines === 4 ? POINTS.SINGLE:
+             0;
     }
 }

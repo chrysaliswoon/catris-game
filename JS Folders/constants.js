@@ -42,7 +42,7 @@ Tetromino Shapes
 - Blue J Tetromino
 - Orange L Tetromino
 
-Arrow Keys
+Arrow Keys [Freeze]
 
 - Numbers are taken from the keycodes for left, right, up and down: https://keycode.info/
 - Object.freeze, freezes the values for the arrow keys so they can't be changed
@@ -51,12 +51,12 @@ Tetromino Movement
 
 - Allows the Tetromino piece to move left, right and down using a spread operator
 
-Tetris Score System
+Tetris Score System [Freeze]
 
 - Generate the score when the Tetris drops and lines are cleared
 - Score numbers are according to https://tetris.wiki/Scoring
 
-Tetris Level & Speed
+Tetris Level & Speed [Freeze]
 
 - Increase the speed at which the blocks will drop when the player advances to the next level in ms
 - Player needs to clear 10 lines for it to go to the next level
@@ -172,7 +172,6 @@ const LEVEL_SPEED = {
 Object.freeze(LEVEL_SPEED);
 
 // Updates the Score //
-
 let accountValues = {
     score: 0,
     lines: 0,
