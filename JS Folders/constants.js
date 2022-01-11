@@ -2,7 +2,6 @@
 
 ===========================================================================================================================================================================================================
 Drawing the Canvas
-
 - The document object provides a programmable interface for the HTML document. 
 - The document has a tree-like structure and is often referred to as the DOM (Document Object Model).
 - We can call the getElementById method to access elements from the DOM.

@@ -1,4 +1,25 @@
-// This will generate the Tetrominoes for the game
+/* =================================== This will generate the Tetrominoes for the game ========================================================================================================================== 
+Randomize Tetromino shape and color
+
+- 
+
+Tetromino Position
+
+- This is the starting position of the Tetromino
+
+Generate Tetromino
+
+- 
+
+Tetromino Movement
+
+- 
+
+Tetromino Randomizer
+
+- Randomly selects one of the Tetrominoes using Math (built in JS). 
+===========================================================================================================================================================================================================
+*/
 
 class Block {
   constructor(ctx){
@@ -8,16 +29,17 @@ class Block {
     //   [1, 0, 0], [1, 1, 1], [0, 0, 0],
     // ]
 
-    // Randomizes the Tetromino shape and color
+    // Randomize Tetromino shape and color //
     const typeID = this.randomizeTetromino(COLORS.length)
     this.shape = SHAPES[typeID]
     this.color = COLORS[typeID]
 
-    // Starting position of the Tetromino
+    // Tetromino Position // 
     this.x = 0;
     this.y = 0;
   }
 
+  // Generate Tetromino //
   draw() {
     this.ctx.fillStyle = this.color;
     this.shape.forEach((row, y) => {
@@ -29,14 +51,14 @@ class Block {
     })
   }
 
-  // Takes a tetromino piece "p" as input and updates the x or y variable of the current piece to change its position on the board
+  // Tetromino Movement ///
   move(p) {
     this.x = p.x;
     this.y = p.y;
     this.shape = p.shape;
   }
 
-  // Randomly selects one of the Tetrominoes using Math (built in JS). 
+  // Tetromino Randomizer //
   randomizeTetromino(noOfTypes) {
     return Math.floor(Math.random() * noOfTypes)
   }
