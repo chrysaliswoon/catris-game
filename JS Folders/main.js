@@ -10,7 +10,16 @@ Reset Game
 - When the game resets, we need to reset all of the values through our account proxy and the time and board that was previously running will be reset.
 */
 
+
 let board = new Board();
+
+// Play meow sound when button is clicked //
+
+let playButtonSound = document.getElementById("meow");
+
+function playMeow() {
+    playButtonSound.play()
+}
 
 // Show Levels //
 let accountValues = {
