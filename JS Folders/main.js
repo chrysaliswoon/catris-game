@@ -8,6 +8,7 @@ Show Levels
 Reset Game
 
 - When the game resets, we need to reset all of the values through our account proxy and the time and board that was previously running will be reset.
+===========================================================================================================================================================================================================
 */
 
 

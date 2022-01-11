@@ -19,13 +19,15 @@ body {
   .title {
     letter-spacing: 2px;
     font-size: 40px; 
+    text-align: center;
+    margin-left: 100px;
   }
 
   /* Styling for the Tetris Board*/
 
   .grid {
     display: grid;
-    grid-template-columns: 350px 200px;
+    grid-template-columns: 950px 200px;
   }
   
   .right-column {
@@ -37,6 +39,8 @@ body {
   #board {
     background-color: whitesmoke;
     opacity: 95%;
+    align-self: center;
+    justify-self: center;
   }
   
   .game-board {
