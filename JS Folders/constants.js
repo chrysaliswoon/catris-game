@@ -91,7 +91,8 @@ ctxNext.scale(BLOCK_SIZE, BLOCK_SIZE);
 
 // Tetromino Colors //
 const COLORS = [
-    'cyan', 
+    // "<img src='https://www.pngitem.com/pimgs/m/311-3117345_tetris-blocks-png-transparent-png.png'/>", 
+    'cyan',
     'yellow', 
     'purple', 
     'green', 
