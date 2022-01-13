@@ -27,13 +27,14 @@ body {
 
   .grid {
     display: grid;
-    grid-template-columns: 950px 200px;
+    grid-template-columns: 500px 200px;
+    justify-content: center;
   }
   
   .right-column {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   #board {
@@ -44,10 +45,11 @@ body {
   }
   
   .game-board {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
     border: solid 3px;
+    justify-content: center;
   }
   
   /* Styling for the Play Button*/
