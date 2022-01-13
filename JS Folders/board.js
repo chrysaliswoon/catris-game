@@ -1,14 +1,21 @@
 /* =================================== This will generate the Board for the game ========================================================================================================================== 
 
+Creates a New Board
+
 - We can create a new Board when starting a new game and a new Piece every time a new piece enters the game.
-- When we create a new instance of board, we connect it with the canvas context. 
+- When we create a new instance of board, we connect it with the canvas context (ctx).
+- Using the (this) keyword, we set certain properties in the class
+  - ctx = ctx
+  - grid = getEmptyBoard
+  - block = Block (from the block.js file) + ctx to draw it
 
-Empty Tetris Board
+Generate Tetris Board
 
-- In Tetris, the board consists of cells, which are either occupied or empty.
-- We will represent empty cells with 0 and a filled cell with 1. 
-- Below is a method that returns an empty board with all cells set to zero. We can use the fill() array method that changes all array elements with a static value.
-- Used an array of numbers to represent a row and an array of rows to represent the board.
+- In Tetris, the board consists of cells, which are either occupied or empty. We will represent empty cells with 0 and a filled cell with 1. 
+- Below is a method that returns an empty board with all cells set to zero. 
+- We use the fill() array method to change the constant, column, to 0.
+- To represent a row, we use an array of numbers. 
+- Afterwards, this array of rows will represent the Tetris Board
 
 Tetris Rotation 
 
@@ -23,6 +30,7 @@ Increase Points
 
 let requestId = null;
 
+// Creates a New Board //
 class Board {  
     constructor(ctx) {
       this.ctx = ctx;
@@ -30,16 +38,14 @@ class Board {
       this.block = new Block(ctx);
     }
 
-    // In Tetris, the board consists of cells, which are either occupied or empty.
-    // We will represent empty cells with 0 and a filled cell with 1. 
-    // Below is a method that returns an empty board with all cells set to zero. We can use the fill() array method that changes all array elements with a static value.
+    // Generate Tetris Board //
     getEmptyBoard() {
-        return Array.from( // Used an array of numbers to represent a row and an array of rows to represent the board.
+        return Array.from( 
           {length: ROW}, () => Array(COL).fill(0)
         );
     }
 
-    // Rotates the Tetris block
+    // Rotates the Tetris block //
     rotate(block) {
       let p = JSON.parse(JSON.stringify(block));
 
@@ -49,13 +55,13 @@ class Board {
           [p.shape[y][x], p.shape[x][y]];
         }
       }
-      // Reverse the order of the columns.
+      // Reverse the order of the columns //
       p.shape.forEach(row => row.reverse());
 
       return p;
     }
 
-    // Collision Detection
+    // Collision Detection //
     valid(p){
       return p.shape.every((row, dy) => {
         return row.every((value, dx) => {
@@ -68,7 +74,7 @@ class Board {
       })
     }
 
-    // Checks if the grids are occupied by a Tetrimino block
+    // Checks if the grids are occupied by a Tetrimino block //
     isNotOccupied(x, y) {
       return this.grid[y] && this.grid[y][x] === 0;
     }
