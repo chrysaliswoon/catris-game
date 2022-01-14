@@ -140,7 +140,7 @@ const POINTS = {
     TETRIS: 800,
     SOFT_DROP: 1, 
     HARD_DROP: 2
-}
+} 
 Object.freeze(POINTS);
 
 // Tetris Level & Speed //

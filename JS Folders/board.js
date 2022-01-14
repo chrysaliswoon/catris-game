@@ -130,9 +130,10 @@ class Board {
         if(row.every(value => value > 0)) { // If the value in the row is all greater than 0 then
           lines++; // Increase score when line is cleared
           
-          this.grid.splice(y, 1) // remove the row
+          this.grid.splice(y, 1); // remove the row
 
-          this.grid.unshift(Array(COL).fill(0)) // and replace it with 0 to clear the colour.
+          this.grid.unshift(Array(COL).fill(0)); // and replace it with 0 to clear the colour.
+          
           if(lines > 0) {
             account.score += this.getLineClearPoints(lines);
             account.lines += lines
