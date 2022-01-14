@@ -51,18 +51,19 @@ function handleKeyPress(event) {
     if (moves[event.keyCode]) { // Get new state of
         let p = moves[event.keyCode](board.block);
 
-        if (board.valid(p)) { // Connects to the board.js to detect the wall for collision
-            board.block.move(p);
-            account.score += POINTS.HARD_DROP;
-            p = moves [KEY.SPACE](board.block);
-            // draw();
+        if(event.keyCode === KEY.SPACE) {
+            while (board.valid(p)) { // Connects to the board.js to detect the wall for collision
+                board.block.move(p);
+                account.score += POINTS.HARD_DROP;
+                p = moves [KEY.SPACE](board.block);
+                // draw();
+            }
         }
-    }
-
-    if (board.valid(p)) {
-        board.block.move(p);
-        if(event.keyCode === KEY.DOWN) {
-            account.score += POINTS.SOFT_DROP
+        if (board.valid(p)) {
+            board.block.move(p);
+            if(event.keyCode === KEY.DOWN) {
+                account.score += POINTS.SOFT_DROP
+            }
         }
     }
 }
@@ -135,4 +136,4 @@ function resetGame() {
     account.level = 0;
     board = new Board(ctx);
     time = {start: 0, elapsed: 0, speed: LEVEL_SPEED[0]};
-}
+} 
