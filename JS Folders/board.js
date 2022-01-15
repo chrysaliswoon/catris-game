@@ -32,8 +32,6 @@ Draws the Tetromino on the Tetris Board
 */
 
 
-let requestId = null;
-
 // Creates a New Board //
 class Board {  
     constructor(ctx, ctxNext) {
@@ -173,7 +171,7 @@ class Board {
           }
         }
       })
-      console.log(lines)
+      // console.log(lines)
     }
 
     // Increase Points //

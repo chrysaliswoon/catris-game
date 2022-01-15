@@ -17,6 +17,7 @@ Reset Game
 
 
 // let board = new Board();
+let requestId = null;
 let board = null;
 
 // Play meow sound when button is clicked //
