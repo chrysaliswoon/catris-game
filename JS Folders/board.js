@@ -141,7 +141,10 @@ class Board {
         row.forEach((value, x) => {
           if(value > 0) {
             this.ctx.fillStyle = COLORS[value-1];
-            this.ctx.fillRect(x, y, 1, 1)
+            this.ctx.fillRect(x, y, 1, 1);
+            this.ctx.strokeStyle = 'black';
+            this.ctx.strokeRect(x, y, 1, 1);
+            this.ctx.lineWidth = 0.1;
           }
         })
       })
@@ -170,6 +173,7 @@ class Board {
           }
         }
       })
+      console.log(lines)
     }
 
     // Increase Points //

@@ -20,7 +20,6 @@ Reset Game
 let board = null;
 
 // Play meow sound when button is clicked //
-
 let playButtonSound = new Audio(src='Image Assets/Catris! (Tetris Cat Cover).mp3')
 
 // function playMeow() {
@@ -153,7 +152,10 @@ function gameOver() {
     cancelAnimationFrame(requestId);
     alert("Game Over!")
 
-    ctx.fillStyle = 'black';
-    ctx.fillRect(20, 20, 150, 100);
+    // ctx.fillStyle = 'black';
+    // ctx.fillRect(1, 3, 8, 1.2);
+    // ctx.font = '1px Arial';
+    // ctx.fillStyle = 'red';
+    // ctx.fillText('GAME OVER', 1.8, 4);
     console.log("Game Over")
 }
