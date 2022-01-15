@@ -128,7 +128,10 @@ function animate(now = 0) {
     if (time.elapsed > time.speed) {
         time.start = now;
 
-        board.drop()
+        if(!board.drop()) {
+            gameOver();
+            return;
+        }
     }
     draw()
     requestId = requestAnimationFrame(animate)
@@ -140,6 +143,17 @@ function resetGame() {
     account.score = 0;
     account.lines = 0;
     account.level = 0;
-    board = new Board(ctx, ctxNext);
+    board = new Board(ctx,ctxNext);
     time = {start: 0, elapsed: 0, speed: LEVEL_SPEED[0]};
 } 
+
+// Game Over //
+
+function gameOver() {
+    cancelAnimationFrame(requestId);
+    alert("Game Over!")
+
+    ctx.fillStyle = 'black';
+    ctx.fillRect(20, 20, 150, 100);
+    console.log("Game Over")
+}
