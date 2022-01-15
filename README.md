@@ -134,7 +134,7 @@ Below is a breakdown and analysis of some of the codes which I have categorised 
 ### Week 1: Conditionals, Booleans, Loop
 A Boolean is a system of logical thought developed by the English mathematician George Boole. We will use a number of operators to determine whether a condition is true or false.
 
-[Conditional-]()
+![Conditional-main.js file](https://github.com/chrysaliswoon/CatrisProject/blob/main/Notes%20&%20Resources/Conditionals.png?raw=true)
 
 ### Week 1: Arrays & Iteration
 
