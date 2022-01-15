@@ -18,9 +18,9 @@ let board = new Board();
 
 let playButtonSound = document.getElementById("meow");
 
-function playMeow() {
-    playButtonSound.play()
-}
+// function playMeow() {
+//     playButtonSound.play()
+// }
 
 // Show Levels //
 let accountValues = {
@@ -43,6 +43,7 @@ let account = new Proxy(accountValues, {
         return true;
     }
 })
+
 
 // Arrow Key Functions //
 function handleKeyPress(event) {
@@ -82,9 +83,9 @@ function draw() {
 }
 
 function play() {
+    // playButtonSound();
     // board = new Board(ctx); // Moved to resetGame()
     resetGame();
-    console.table(board.grid); // Identify where the Tetromino block is on the grids of our game board.
     // draw(); => This is removed as we have replaced it with the AnimationFrame function
     addEventListener();
 
@@ -94,6 +95,7 @@ function play() {
     
     // time.start = performance.now(); // Moved to resetGame() function
     animate();
+    console.table(board.grid); // Identify where the Tetromino block is on the grids of our game board.
 }
 
 // function draw() {
@@ -123,7 +125,6 @@ function animate(now = 0) {
 
         board.drop()
     }
-
     draw()
     requestId = requestAnimationFrame(animate)
 }

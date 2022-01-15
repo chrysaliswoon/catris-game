@@ -168,5 +168,4 @@ const LEVEL_SPEED = {
     19: 30,
     20: 30,
 }
-
 Object.freeze(LEVEL_SPEED);

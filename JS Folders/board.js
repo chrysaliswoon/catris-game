@@ -24,6 +24,10 @@ Tetris Rotation
 Increase Points 
 
 - To increase the points as more line clears, we multiply the points with the current level and add one as we start on level 0.
+
+Draws the Tetromino on the Tetris Board
+
+- 
 ===========================================================================================================================================================================================================
 */
 
@@ -113,6 +117,7 @@ class Board {
       })
     }
 
+    // Draws the Tetromino on the Tetris Board //
     draw() {
       this.grid.forEach((row, y) => {
         row.forEach((value, x) => {
@@ -136,7 +141,7 @@ class Board {
           
           if(lines > 0) {
             account.score += this.getLineClearPoints(lines);
-            account.lines += lines
+            account.lines += lines;
 
             if (account.lines >= LINES_PER_LEVEL) { // If player has reached the required number of lines for the next level
               account.level++; // go to the next level
