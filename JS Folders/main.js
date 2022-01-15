@@ -31,7 +31,7 @@ let playButtonSound = new Audio(src='Image Assets/Catris! (Tetris Cat Cover).mp3
 let accountValues = {
     score: 0,
     lines: 0,
-    level: 0,
+    level: 0
 }
 
 function updateAccount(key, value) {
@@ -125,7 +125,7 @@ function play() {
 function animate(now = 0) {
     time.elapsed = now - time.start
 
-    if (time.elapsed > time.speed) {
+    if (time.elapsed > time.level) {
         time.start = now;
 
         if(!board.drop()) {
@@ -144,7 +144,7 @@ function resetGame() {
     account.lines = 0;
     account.level = 0;
     board = new Board(ctx,ctxNext);
-    time = {start: 0, elapsed: 0, speed: LEVEL_SPEED[0]};
+    time = {start: 0, elapsed: 0, level: LEVEL_SPEED[0]};
 } 
 
 // Game Over //
