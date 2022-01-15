@@ -1,4 +1,8 @@
 /* =================================== This will initialise the game and execute the overall game logic for Tetris ========================================================================================================================== 
+Play meow sound when button is clicked
+
+- Using an in-built library, Audio, it will play the sound when the start button is clicked. 
+- Music is from CrabbyCrab101 - https://www.youtube.com/watch?v=sNrjxzpS5S8&t=1s
 
 Show Levels
 
@@ -12,11 +16,12 @@ Reset Game
 */
 
 
-let board = new Board();
+// let board = new Board();
+let board = null;
 
 // Play meow sound when button is clicked //
 
-let playButtonSound = document.getElementById("meow");
+let playButtonSound = new Audio(src='Image Assets/Catris! (Tetris Cat Cover).mp3')
 
 // function playMeow() {
 //     playButtonSound.play()
@@ -75,7 +80,7 @@ function addEventListener(){
 }
 
 function draw() {
-    const { width, height} = ctx.canvas;
+    const { width, height } = ctx.canvas;
     ctx.clearRect(0, 0, width, height)
 
     board.draw();
@@ -83,7 +88,7 @@ function draw() {
 }
 
 function play() {
-    // playButtonSound();
+    playButtonSound.play();
     // board = new Board(ctx); // Moved to resetGame()
     resetGame();
     // draw(); => This is removed as we have replaced it with the AnimationFrame function
@@ -135,6 +140,6 @@ function resetGame() {
     account.score = 0;
     account.lines = 0;
     account.level = 0;
-    board = new Board(ctx);
+    board = new Board(ctx, ctxNext);
     time = {start: 0, elapsed: 0, speed: LEVEL_SPEED[0]};
 } 

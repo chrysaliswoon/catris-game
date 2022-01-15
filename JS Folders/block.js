@@ -31,8 +31,8 @@ class Block {
 
     // Randomize Tetromino shape and color //
     const typeID = this.randomizeTetromino(COLORS.length)
-    this.shape = SHAPES[typeID]
-    this.color = COLORS[typeID]
+    this.shape = SHAPES[typeID];
+    this.color = COLORS[typeID];
 
     // Tetromino Position // 
     this.x = 0;

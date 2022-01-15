@@ -36,10 +36,13 @@ let requestId = null;
 
 // Creates a New Board //
 class Board {  
-    constructor(ctx) {
+    constructor(ctx, ctxNext) {
       this.ctx = ctx;
+      this.ctxNext = ctxNext;
       this.grid = this.getEmptyBoard();
-      this.block = new Block(ctx);
+      // this.block = new Block(ctx);
+      this.setNextBlock();
+      this.setCurrentBlock();
     }
 
     // Generate Tetris Board //
@@ -102,9 +105,24 @@ class Board {
         if(this.block.y === 0) {
           return false;
         }
-        this.block = new Block(this.ctx)
+        // this.block = new Block(this.ctx)
+        this.setCurrentBlock();
       }
       return true;
+    }
+
+    setNextBlock() {
+      const { width, height } = this.ctxNext.canvas;
+      this.nextBlock = new Block(this.ctxNext);
+      this.ctxNext.clearRect(0, 0, width, height);
+      this.nextBlock.draw();
+    }
+
+    setCurrentBlock() {
+      this.block = this.nextBlock;
+      this.block.ctx = this.ctx;
+      this.block.x = 3;
+      this.setNextBlock();
     }
 
     freeze() {
