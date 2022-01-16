@@ -9,7 +9,8 @@ Drawing the Canvas
 
 Tetris Board 
 
-- The Tetris board has a width of 20 (row), and height of 10 (col). In the event that this number changes (highly unlikely), the variable type will be changed to "Let".
+- The Tetris board has a width of 20 (row), and height of 10 (col). 
+- In the event that this number changes (highly unlikely), the variable type will be changed to "Let".
 - Width of the board is 10 columns
 - Height of the board is 20 rows
 -Size of the Blocks will be set to 30

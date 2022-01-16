@@ -139,9 +139,12 @@ A Boolean is a system of logical thought developed by the English mathematician 
 ### Week 1: Arrays 
 An array is a data structure, and like a number or string, you can assign an array to a variable. An array is a list. All list items go between square brackets.
 
+![Array-constants.js file](https://github.com/chrysaliswoon/CatrisProject/blob/main/Notes%20&%20Resources/Arrays.png?raw=true)
 
 ### Week 2: Functions & Scope
 Using functions is another application of DRY. Don't Repeat Yourself. With a function, you can store code that can be used conveniently as many times as you wish, without having to rewrite the code each time. We always use const to declare the functions. Functions should only do one thing.
+
+![Functions/Scope-main.js file](https://github.com/chrysaliswoon/CatrisProject/blob/main/Notes%20&%20Resources/Functions,%20Scope.png?raw=true)
 
 Scope is the restriction of where in your code your variables can be accessed. If you try to access a variable outside of its scope, it will not be defined. In general, you want scope to be restricted. You only want your variables accessible to specific safe zones.
 
