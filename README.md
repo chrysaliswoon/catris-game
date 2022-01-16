@@ -132,23 +132,37 @@ I also created notes and made a series of Medium articles which will give you in
 Below is a breakdown and analysis of some of the codes which I have categorised according to the concepts we have covered in class.
 
 ### Week 1: Conditionals, Booleans, Loop
-A Boolean is a system of logical thought developed by the English mathematician George Boole. We will use a number of operators to determine whether a condition is true or false.
+A Boolean is a system of logical thought developed by the English mathematician George Boole. We use a number of operators to determine whether a condition is true or false.
 
 ![Conditional-main.js file](https://github.com/chrysaliswoon/CatrisProject/blob/main/Notes%20&%20Resources/Conditionals.png?raw=true)
 
-### Week 1: Arrays & Iteration
+### Week 1: Arrays 
+An array is a data structure, and like a number or string, you can assign an array to a variable. An array is a list. All list items go between square brackets.
 
-### Week 2: Functions, Scope
 
-### Week 2: Program Design, Objects
+### Week 2: Functions & Scope
+Using functions is another application of DRY. Don't Repeat Yourself. With a function, you can store code that can be used conveniently as many times as you wish, without having to rewrite the code each time. We always use const to declare the functions. Functions should only do one thing.
 
-### Week 3: Callbacks, Array Methods
+Scope is the restriction of where in your code your variables can be accessed. If you try to access a variable outside of its scope, it will not be defined. In general, you want scope to be restricted. You only want your variables accessible to specific safe zones.
 
-### Week 3: Object Methods, Classes
 
-### Week 4: DOM Manipulation
+### Week 2: Pseudocode & Objects
+Pseudo code is the process of taking a larger solution and breaking it down into the programmable steps without actually writing any code.
+
+In JavaScript, objects are what we use to represent key-value pairs. Arrays are declared using the square brackets const arr = []; while Objects are declared using the curly braces const obj = {}. Objects contain key-value pairs. They are are the properties of the object.
+
+
+### Week 3: Callbacks
+A function that takes another function an argument is called a higher order function. The function that is being passed in is called a callback.
+
+
+### Week 3: Object Oriented Programming (OOP) & Classes
+A class is a blueprint or template for similar objects, and We can add data and functionality to it. When creating a class, it's custom to capitalize the first letter of the variable, so we know it's a class. This follows customs in other programming languages.
+
 
 ### Week 5: Event Bubbling
+When elements are nested within the DOM, the DOM needs a way to decide which elements ought to trigger an event.
+
 
 <br>
 

@@ -9,6 +9,10 @@ Show Levels
 - We will show the player which level they are currently on by initializing a value for the levels and lines. 
 - This means that when we start a new game, we will need to reset these values too.
 
+Updates the HTML element to the value provided 
+
+- 
+
 Reset Game
 
 - When the game resets, we need to reset all of the values through our account proxy and the time and board that was previously running will be reset.
@@ -24,9 +28,9 @@ let board = null;
 let playButtonSound = new Audio(src='Image Assets/Catris! (Tetris Cat Cover).mp3')
 playButtonSound.loop = true;
 
-// function playMeow() {
-//     playButtonSound.play()
-// }
+// // function playMeow() {
+// //     playButtonSound.play()
+// // }
 
 // Show Levels //
 let accountValues = {
@@ -35,6 +39,8 @@ let accountValues = {
     level: 0
 }
 
+
+// Updates the HTML element to the value provided //
 function updateAccount(key, value) {
     let element = document.getElementById(key);
     if (element) {
@@ -139,7 +145,6 @@ function animate(now = 0) {
 }
 
 // Reset Game //
-
 function resetGame() {
     account.score = 0;
     account.lines = 0;
@@ -149,7 +154,6 @@ function resetGame() {
 } 
 
 // Game Over //
-
 function gameOver() {
     cancelAnimationFrame(requestId);
     alert("Game Over!")
