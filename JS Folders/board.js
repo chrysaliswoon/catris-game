@@ -140,7 +140,7 @@ class Board {
           if(value > 0) {
             this.ctx.fillStyle = COLORS[value-1];
             this.ctx.fillRect(x, y, 1, 1);
-            this.ctx.strokeStyle = 'black';
+            this.ctx.strokeStyle = 'grey';
             this.ctx.strokeRect(x, y, 1, 1);
             this.ctx.lineWidth = 0.1;
           }

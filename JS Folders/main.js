@@ -22,6 +22,7 @@ let board = null;
 
 // Play meow sound when button is clicked //
 let playButtonSound = new Audio(src='Image Assets/Catris! (Tetris Cat Cover).mp3')
+playButtonSound.loop = true;
 
 // function playMeow() {
 //     playButtonSound.play()

@@ -42,7 +42,7 @@ class Block {
   // Generate Tetromino //
   draw() {
     this.ctx.fillStyle = this.color;
-    this.ctx.strokeStyle = 'black';
+    this.ctx.strokeStyle = 'grey';
     this.shape.forEach((row, y) => {
       row.forEach((value, x) => {
         if (value > 0) {
