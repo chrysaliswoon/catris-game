@@ -152,29 +152,40 @@ Scope is the restriction of where in your code your variables can be accessed. I
 ### Week 2: Pseudocode & Objects
 Pseudo code is the process of taking a larger solution and breaking it down into the programmable steps without actually writing any code.
 
+![Pseudocode-constants.js file](https://github.com/chrysaliswoon/CatrisProject/blob/main/Notes%20&%20Resources/Pseudocode(1).png?raw=true)
+![Pseudocode(2)-constants.js file](https://github.com/chrysaliswoon/CatrisProject/blob/main/Notes%20&%20Resources/Pseudocode(2).png?raw=true)
+
 In JavaScript, objects are what we use to represent key-value pairs. Arrays are declared using the square brackets const arr = []; while Objects are declared using the curly braces const obj = {}. Objects contain key-value pairs. They are are the properties of the object.
 
+![Objects-constants.js](https://github.com/chrysaliswoon/CatrisProject/blob/main/Notes%20&%20Resources/Objects.png?raw=true)
 
 ### Week 3: Callbacks
 A function that takes another function an argument is called a higher order function. The function that is being passed in is called a callback.
 
+![Callbacks(1)-main.js](https://github.com/chrysaliswoon/CatrisProject/blob/main/Notes%20&%20Resources/Callbacks(1).png?raw=true)
+![Callbacks(2)-main.js](https://github.com/chrysaliswoon/CatrisProject/blob/main/Notes%20&%20Resources/Callbacks(2).png?raw=true)
+![Callbacks(3)-main.js](https://github.com/chrysaliswoon/CatrisProject/blob/main/Notes%20&%20Resources/Callbacks(3).png?raw=true)
 
 ### Week 3: Object Oriented Programming (OOP) & Classes
-A class is a blueprint or template for similar objects, and We can add data and functionality to it. When creating a class, it's custom to capitalize the first letter of the variable, so we know it's a class. This follows customs in other programming languages.
+A class is a blueprint or template for similar objects, and we can add data and functionality to it. When creating a class, it's custom to capitalize the first letter of the variable, so we know it's a class. This follows customs in other programming languages.
 
+![Classes(1)-board.js](https://github.com/chrysaliswoon/CatrisProject/blob/main/Notes%20&%20Resources/Classes(1).png?raw=true)
+![Classes(2)-main.js](https://github.com/chrysaliswoon/CatrisProject/blob/main/Notes%20&%20Resources/Classes(1).png?raw=true)
 
 ### Week 5: Event Bubbling
 When elements are nested within the DOM, the DOM needs a way to decide which elements ought to trigger an event.
 
-
+![EventBubbling-main.js](https://github.com/chrysaliswoon/CatrisProject/blob/main/Notes%20&%20Resources/Event%20Bubbling.png?raw=true)
 <br>
 
 ## Future Developments / Improvements
-As this is created for a project submission, there might be no future iterations of this. However, if there were, these would be the future developments/improvements I would create:
+As this is created for a project submission, there might be no future iterations of this. However, if there were, these would be the future developments/improvements I would implement:
 
 - Update the game visuals to make it more cat-themed and visually appealing.
 - Recreate the game with shorter and more efficient codes independently.
-
+- Create a hold section where players can store a Tetris block to be used later.
+- Program the Pause, Rotate Left and Hold button.
+- Create a Start screen with instructions.
 
 <br>
 
@@ -196,3 +207,7 @@ As JS is relatively new to me and there were a lot of concepts that I had to get
 - [Learning Modern JS with Tetris](https://michael-karen.medium.com/learning-modern-javascript-with-tetris-92d532bcd057)
 - [Building TETRIS - Game Development Tutorial](https://www.youtube.com/watch?v=8zXlWbEgfiY&t=100s)
 - [Tetris SRS Mechanism Explained](https://www.youtube.com/watch?v=UdYri9Kx6Zs)
+
+## Other Projects
+Below are some other games which I have created independently by myself based on the knowledge I gained from creating this Tetris Game:
+
