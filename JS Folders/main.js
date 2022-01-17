@@ -94,6 +94,16 @@ function draw() {
     board.block.draw();
 }
 
+// Sound Button //
+function mute() {
+    playButtonSound.muted = true;
+}
+
+function unmute() {
+    playButtonSound.muted = false;
+}
+
+// Play Button //
 function play() {
     playButtonSound.play();
     // board = new Board(ctx); // Moved to resetGame()

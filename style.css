@@ -52,13 +52,13 @@ body {
     justify-content: center;
   }
   
-  /* Styling for the Play Button*/
-  .play-button {
+  /* Styling for the Buttons*/
+  .play-button, .sound-button {
     display: inline-block;
     margin: 5px;
     padding: 15px 15px;
-    font-size: 20px;
-    font-weight: bolder;
+    /* font-size: 20px; */
+    /* font-weight: bolder; */
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -81,5 +81,10 @@ body {
     /* box-shadow: 0 0 0 2px #b18597, 0 0 #b18597; */
     transform: translateY(4px);
 }
+
+  .sound-button{
+    max-width: 30%;
+  }
+
 
 
