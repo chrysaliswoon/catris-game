@@ -136,10 +136,20 @@ A Boolean is a system of logical thought developed by the English mathematician 
 
 ![Conditional-main.js file](https://github.com/chrysaliswoon/CatrisProject/blob/main/Notes%20&%20Resources/Conditionals.png?raw=true)
 
+The above code uses a While loop which executes the statement as long as the test condition is true. 
+
+The test condition for this code can be read as ""If the user presses the space key then...". 
+
+If the user presses the space key, the Tetris block will do a hard drop and go to the bottom of the grid while making sure it is within the dimensions of the Tetris board.
+
 ### Week 1: Arrays 
 An array is a data structure, and like a number or string, you can assign an array to a variable. An array is a list. All list items go between square brackets.
 
 ![Array-constants.js file](https://github.com/chrysaliswoon/CatrisProject/blob/main/Notes%20&%20Resources/Arrays.png?raw=true)
+
+For the Tetris game, we used a few arrays, two of which is determining the colors and shapes of the Tetris block. 
+
+For the shapes, any number that is more than 0 indicates that the particular section will be colored. The numbers 1-7 represents the different colors it will create for each shape. 
 
 ### Week 2: Functions & Scope
 Using functions is another application of DRY. Don't Repeat Yourself. With a function, you can store code that can be used conveniently as many times as you wish, without having to rewrite the code each time. We always use const to declare the functions. Functions should only do one thing.
