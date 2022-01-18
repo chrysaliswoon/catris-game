@@ -27,7 +27,7 @@ body {
 
   .grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 30em 300px 50px;
     justify-content: center;
   }
   
@@ -40,6 +40,7 @@ body {
   .top-right {
     display: flex;
     flex-direction: column;
+    max-width: 80%;
     
   }
 
@@ -74,7 +75,7 @@ body {
     border: none;
     border-radius: 15px;
     /* box-shadow: 0 9px #f9c4d2; */
-    max-width: 50%;
+    max-width: 30%;
     height: auto;
   }
 
@@ -82,20 +83,17 @@ body {
     /* background-color: #ffe9e9; */
 }
 
-
   .play-button:active {
     /* box-shadow: 0 0 0 2px #b18597, 0 0 #b18597; */
     transform: translateY(4px);
 }
 
-  .sound-button, .mute-button, .unmute-button{
-    max-width: 30%;
-  }
-
   .unmute-button {
     display: none;
   }
 
-
+  .swal-overlay {
+    background-color: rgba(43, 165, 137, 0.45);
+  }
 
 

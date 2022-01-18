@@ -95,18 +95,23 @@ function draw() {
 }
 
 // Sound Button //
-function mute() {
-    playButtonSound.muted = true;
-}
+// // function sound() {
+// //     playButtonSound.muted = true;
+// // }
 
-function unmute() {
-    playButtonSound.muted = false;
-}
+// // function unmute() {
+// //     playButtonSound.muted = false;
+// // }
+// function soundButton() {
+//     if(playButtonSound.muted = false) {
+//         $(.mute()).show()
+//     } else $(.unmute()).show()
+// }
 
 // Play Button //
 function play() {
     playButtonSound.play();
-    playButtonSound.muted = false;
+    playButtonSound.muted = true;
     // board = new Board(ctx); // Moved to resetGame()
     resetGame();
     // draw(); => This is removed as we have replaced it with the AnimationFrame function
@@ -166,13 +171,24 @@ function resetGame() {
 
 // Game Over //
 function gameOver() {
+    playButtonSound.muted = true;
     cancelAnimationFrame(requestId);
-    alert("Game Over!")
-
+    // alert("Game Over!")
+    JSalert();
     // ctx.fillStyle = 'black';
     // ctx.fillRect(1, 3, 8, 1.2);
     // ctx.font = '1px Arial';
     // ctx.fillStyle = 'red';
     // ctx.fillText('GAME OVER', 1.8, 4);
     console.log("Game Over")
+}
+
+// Sweet Alert Component //
+function JSalert(){
+	swal({
+        icon:"error",
+        title: "GAME OVER!",
+        text: "Do you want to restart?",
+        // buttons: true,
+      });
 }
