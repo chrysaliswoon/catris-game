@@ -95,18 +95,15 @@ function draw() {
 }
 
 // Sound Button //
-// // function sound() {
-// //     playButtonSound.muted = true;
-// // }
+function mute() {
+    playButtonSound.muted = true;
+    // console.log("clicked")
+}
 
 // // function unmute() {
 // //     playButtonSound.muted = false;
 // // }
-// function soundButton() {
-//     if(playButtonSound.muted = false) {
-//         $(.mute()).show()
-//     } else $(.unmute()).show()
-// }
+
 
 // Play Button //
 function play() {

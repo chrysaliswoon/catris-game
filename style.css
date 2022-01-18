@@ -60,7 +60,7 @@ body {
   }
   
   /* Styling for the Buttons*/
-  .play-button, .sound-button, .unmute-button, .help-button {
+  .play-button, .help-button {
     display: inline-block;
     margin: 5px;
     padding: 15px 15px;
@@ -90,6 +90,13 @@ body {
 
   .unmute-button {
     display: none;
+  }
+
+  .mute-button, .unmute-button {
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+
   }
 
   .swal-overlay {
