@@ -106,6 +106,7 @@ function unmute() {
 // Play Button //
 function play() {
     playButtonSound.play();
+    playButtonSound.muted = false;
     // board = new Board(ctx); // Moved to resetGame()
     resetGame();
     // draw(); => This is removed as we have replaced it with the AnimationFrame function

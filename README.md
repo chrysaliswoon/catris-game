@@ -112,8 +112,6 @@ I also created notes and made a series of Medium articles which will give you in
 
 **Part 11 (Next Tetromino):**
 
-**Part 12 (Creating High Scores):**
-
 
 <br>
 
@@ -140,7 +138,7 @@ The above code uses a While loop which executes the statement as long as the tes
 
 The test condition for this code can be read as ""If the user presses the space key then...". 
 
-If the user presses the space key, the Tetris block will do a hard drop and go to the bottom of the grid while making sure it is within the dimensions of the Tetris board.
+If this test condition is true, the Tetris block will do a hard drop and go to the bottom of the grid while making sure it is within the dimensions of the Tetris board.
 
 ### Week 1: Arrays 
 An array is a data structure, and like a number or string, you can assign an array to a variable. An array is a list. All list items go between square brackets.

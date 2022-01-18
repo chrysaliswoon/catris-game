@@ -27,7 +27,7 @@ body {
 
   .grid {
     display: grid;
-    grid-template-columns: 500px 200px;
+    grid-template-columns: 2fr 1fr 1fr;
     justify-content: center;
   }
   
@@ -35,6 +35,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+  }
+
+  .top-right {
+    display: flex;
+    flex-direction: column;
+    
   }
 
   #board {
@@ -53,7 +59,7 @@ body {
   }
   
   /* Styling for the Buttons*/
-  .play-button, .sound-button {
+  .play-button, .sound-button, .unmute-button, .help-button {
     display: inline-block;
     margin: 5px;
     padding: 15px 15px;
@@ -82,9 +88,14 @@ body {
     transform: translateY(4px);
 }
 
-  .sound-button{
+  .sound-button, .mute-button, .unmute-button{
     max-width: 30%;
   }
+
+  .unmute-button {
+    display: none;
+  }
+
 
 
 
