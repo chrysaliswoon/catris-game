@@ -180,15 +180,29 @@ function gameOver() {
     // ctx.font = '1px Arial';
     // ctx.fillStyle = 'red';
     // ctx.fillText('GAME OVER', 1.8, 4);
-    console.log("Game Over")
+    // console.log("Game Over")
 }
 
-// Sweet Alert Component //
-function JSalert(){
-	swal({
-        icon:"error",
-        title: "GAME OVER!",
-        text: "Do you want to restart?",
-        // buttons: true,
-      });
+// Sweet Alert Component - Game Over Pop-up //
+function JSalert() {
+	Swal.fire({
+        title: 'GAME OVER!',
+        text: 'Do you want to try again?',
+        width: 600,
+        padding: '3em',
+        color: '#716add',
+        background: '#fff url(/images/trees.png)',
+        backdrop: `
+          rgba(0,0,123,0.4)
+          url("https://f8n-production.s3.amazonaws.com/creators/profile/fcusz42mh-obs-gif-4i7ctk.gif")
+          no-repeat
+        `
+      })
+}
+
+// Sweet Alert Component - Help Page Pop-up //
+function help(){
+  Swal.fire({
+    imageUrl: 'Image Assets/instructions.png',
+  })
 }

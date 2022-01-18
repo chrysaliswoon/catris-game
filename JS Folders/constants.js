@@ -173,3 +173,4 @@ const LEVEL_SPEED = {
     20: 30,
 }
 Object.freeze(LEVEL_SPEED);
+
