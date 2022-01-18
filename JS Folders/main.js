@@ -111,7 +111,7 @@ function draw() {
 // Play Button //
 function play() {
     playButtonSound.play();
-    playButtonSound.muted = true;
+    playButtonSound.muted = false;
     // board = new Board(ctx); // Moved to resetGame()
     resetGame();
     // draw(); => This is removed as we have replaced it with the AnimationFrame function
@@ -188,6 +188,9 @@ function JSalert() {
 	Swal.fire({
         title: 'GAME OVER!',
         text: 'Do you want to try again?',
+        imageUrl: 'https://i.pinimg.com/originals/f3/78/4d/f3784dc54de78b85eac662dc55ba64aa.gif',
+        imageWidth: 400,
+        imageHeight: 400,
         width: 600,
         padding: '3em',
         color: '#716add',
