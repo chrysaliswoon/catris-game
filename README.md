@@ -216,6 +216,10 @@ As JS is relatively new to me and there were a lot of concepts that I had to get
 - [Building TETRIS - Game Development Tutorial](https://www.youtube.com/watch?v=8zXlWbEgfiY&t=100s)
 - [Tetris SRS Mechanism Explained](https://www.youtube.com/watch?v=UdYri9Kx6Zs)
 
-## Other Projects
-Below are some other games which I have created independently by myself based on the knowledge I gained from creating this Tetris Game:
+## Game Asset Atrributions
+The game assets in this project does not belong to me. All rights belong to the original artists and owners. Below are the links to the game assets used in this project:
+
+- [Pixel Background](https://data.whicdn.com/images/299174311/original.gif)
+- [Paw Icon](https://www.flaticon.com/free-icon/pawprint_6316837?term=paw&page=1&position=73&page=1&position=73&related_id=6316837&origin=tag)
+
 
