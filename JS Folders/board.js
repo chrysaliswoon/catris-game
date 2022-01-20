@@ -99,7 +99,7 @@ class Board {
         this.block.move(p);
       } else {
         this.freeze(); // Freeze the Tetromino blocks in place and generate a new block immediately.
-        this.clearLines() // Clears a line of Tetrimino blocks when they all align together.
+        this.clearLines(); // Clears a line of Tetrimino blocks when they all align together.
         if(this.block.y === 0) {
           return false;
         }
@@ -164,6 +164,7 @@ class Board {
 
             if (account.lines >= LINES_PER_LEVEL) { // If player has reached the required number of lines for the next level
               account.level++; // go to the next level
+              popupMessage();
 
               account.lines -= LINES_PER_LEVEL; // Remove the lines to start on the next level
               time.level = LEVEL_SPEED[account.level]; // Increase the speed in the next level

@@ -78,6 +78,11 @@ function handleKeyPress(event) {
                 account.score += POINTS.SOFT_DROP
             }
         }
+
+        // if (event.keyCode === KEY.ESC) {
+        //     pause();
+        //     console.log("escape key clicked")
+        //   }
     }
 }
 
@@ -94,21 +99,25 @@ function draw() {
     board.block.draw();
 }
 
-// Sound Button //
+// Sound Button - To mute/unmute //
 function mute() {
     playButtonSound.muted = true;
+    $(".unmute-button").show();
+    $(".mute-button").hide();
     // console.log("clicked")
 }
 
-// // function unmute() {
-// //     playButtonSound.muted = false;
-// // }
+function unmute() {
+    playButtonSound.muted = false;
+    $(".mute-button").show();
+    $(".unmute-button").hide();
+}
 
 
 // Play Button //
 function play() {
     playButtonSound.play();
-    playButtonSound.muted = false;
+    unmute();
     // board = new Board(ctx); // Moved to resetGame()
     resetGame();
     // draw(); => This is removed as we have replaced it with the AnimationFrame function
@@ -180,6 +189,14 @@ function gameOver() {
     // console.log("Game Over")
 }
 
+// Pause //
+// function pause() {
+//     if(!requestId){
+//         animate();
+//         return;
+//     }
+// }
+
 // Sweet Alert Component - Game Over Pop-up //
 function JSalert() {
 	Swal.fire({
@@ -205,4 +222,26 @@ function help(){
   Swal.fire({
     imageUrl: 'Image Assets/instructions.png',
   })
+}
+
+// Random Pop-up Messages // - DOES NOT WORK
+// function getRandomMessage(arr) {
+//     const randomMessage = Math.floor(Math.random() * arr.length);
+//     const message = arr[randomMessage];
+
+//     return message;
+// }
+
+// const messageList = ['Meowtastic!', 'Purrrfect!!!', 'Pawfection!!'];
+// const messageResult = getRandomMessage(messageList);
+
+// Random Pop-up Message that appears when level is increased //
+function popupMessage(){
+    Swal.fire({
+        // position: 'top-end',
+        // icon: 'success',
+        title: 'MEOWTASTIC!',
+        showConfirmButton: false,
+        timer: 500,
+      })
 }

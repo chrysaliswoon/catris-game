@@ -118,6 +118,7 @@ const SHAPES = [
 
 // Arrow Keys // 
 const KEY = {
+    // ESC: 27,
     LEFT: 37, 
     UP: 38,
     RIGHT: 39,
