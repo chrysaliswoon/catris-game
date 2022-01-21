@@ -149,7 +149,7 @@ const POINTS = {
 Object.freeze(POINTS);
 
 // Tetris Level & Speed //
-const LINES_PER_LEVEL = 1; 
+const LINES_PER_LEVEL = 3; 
 const LEVEL_SPEED = { 
     0: 600, 
     1: 550, 
