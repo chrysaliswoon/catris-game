@@ -1,7 +1,7 @@
 /* =================================== This will generate the Tetrominoes for the game ========================================================================================================================== 
 Randomize Tetromino shape and color
 
-- 
+- Uses the Math built-in object to get a random Tetromino block with its corresponding colors from the constants file.
 
 Tetromino Position
 
@@ -9,11 +9,11 @@ Tetromino Position
 
 Generate Tetromino
 
-- 
+- Uses the canvas to draw and generate the Tetromino blocks
 
 Tetromino Movement
 
-- 
+- Rotates the Tetromino blocks on the X and Y axis
 
 Tetromino Randomizer
 

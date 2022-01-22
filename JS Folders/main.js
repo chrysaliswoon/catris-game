@@ -11,7 +11,11 @@ Show Levels
 
 Updates the HTML element to the value provided 
 
-- 
+- Updates the account values which are score, lines and level when it fulfills the condition
+
+Arrow Key Functions
+
+- When a specific keycode is pressed (this is from the constants file), it will rotate, move or drop the Tetromino blocks.
 
 Reset Game
 
