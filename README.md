@@ -88,31 +88,6 @@ As Tetris is a classic game which existed for quite a while, this meant that the
 
 According to the current Tetris guidelines, the standard for how Tetrominoes behave is known as the [Super Rotation System (SRS)](https://tetris.fandom.com/wiki/SRS)
 
-I also created notes and made a series of Medium articles which will give you insight into how I created the game:
-
-**Part 1 (Planning):** https://medium.com/@chrysaliswoon/combining-html-css-js-tetris-project-part-i-planning-cbe524c97a63
-
-**Part 2 (Creating the Visuals):** https://medium.com/@chrysaliswoon/combining-html-css-js-tetris-project-part-2-creating-the-visuals-7ec41d3cde0c 
-
-**Part 3 (Creating the Tetrominoes):** 
-
-**Part 4 (Keyboard Input):**
-
-**Part 5 (Collision Detection):**
-
-**Part 6 (Tetromino Rotation):**
-
-**Part 7 (Randomization of Tetrominoes):**
-
-**Part 8 (Game Loop & Timer):**
-
-**Part 9 (Line Clear):**
-
-**Part 10 (Creating Levels & Game Over Feature):**
-
-**Part 11 (Next Tetromino):**
-
-
 <br>
 
 ## Key Learnings
